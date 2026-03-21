@@ -1,23 +1,604 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hello Bootstrap 5.2.3</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<title>Jothi Heart & Skin Clinic | Kanchipuram</title>
+<meta name="description" content="Expert cardiac care and advanced dermatology & aesthetics under one roof in Kanchipuram.">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/styles.css">
 </head>
-<body>
-  <div class="container text-center mt-5">
-    <h1 class="text-primary">Hello World Website1 🚀</h1>
-    <p class="lead">My first Bootstrap 5.2.3 website</p>
-    <button class="btn btn-success" onclick="sayHello()">Click Me</button>
-  </div>
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="script.js"></script>
+<body>
+
+<!-- NAVBAR -->
+<nav id="navbar" class="navbar navbar-expand-lg fixed-top">
+<div class="container">
+<a class="navbar-brand fw-bold"><img src="https://i.ibb.co/8DjMQVcC/Whats-App-Image-2026-03-16-at-22-59-59.jpg" alt="" style="width: 48px;height: 48px;object-fit: contain;border-radius: 4px;">Jothi Clinic</a>
+
+
+
+
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+<ul class="navbar-nav ms-auto">
+<li><a class="nav-link" href="#about">About</a></li>
+<li><a class="nav-link" href="#services">Services</a></li>
+<li><a class="nav-link" href="#treatments">Treatments</a></li>
+<li><a class="nav-link" href="#doctors">Doctors</a></li>
+<li><a class="nav-link" href="#pricing">Rate Card</a></li>
+<li><a class="nav-link" href="#contact">Location</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+<div id="carouselExample" class="carousel slide carousel-fade" data-bs-ride="carousel">
+<div class="carousel-inner">
+
+<div class="carousel-item active">
+<img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=1600">
+<div class="carousel-caption">
+<h1>Caring for Your Heart. Enhancing Your Skin.</h1>
+<p>"Radiant Skin and Resilient Heart"</p>
+<a href="https://wa.me/919080442303" class="btn btn-success">WhatsApp to Book</a>
+<a href="tel:9080442303" class="btn btn-light">Call Now</a>
+</div>
+</div>
+
+<div class="carousel-item">
+<img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?q=80&w=1600">
+<div class="carousel-caption">
+<h1>Advanced Dermatology & Aesthetics</h1>
+<p>Laser · PRP · HydraFacial · Chemical Peel</p>
+</div>
+</div>
+
+<div class="carousel-item">
+<img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=1600">
+<div class="carousel-caption">
+<h1>Kanchipuram · Est. 2024</h1>
+<p>Expert specialists serving your health & beauty</p>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-5 text-center">
+<div class="container">
+
+<h2>Jothi Heart & Skin Clinic</h2>
+<p>Kanchipuram · Tamil Nadu</p>
+
+<p class="lead">
+Expert cardiac care and advanced dermatology & aesthetics under one roof.
+Led by specialist doctors serving Kanchipuram.
+</p>
+
+</div>
+</section>
+
+<!-- STATS -->
+<section class="py-5 bg-light text-center">
+<div class="container">
+<div class="row">
+
+<div class="col-md-3"><h3>4.8★</h3><p>Google Rating</p></div>
+<div class="col-md-3"><h3>70+</h3><p>Reviews</p></div>
+<div class="col-md-3"><h3>1 Year</h3><p>Of Excellence</p></div>
+<div class="col-md-3"><h3>2</h3><p>Specialties</p></div>
+
+</div>
+</div>
+</section>
+
+<!-- OFFER -->
+<section class="py-5 text-center highlight">
+<div class="container">
+<h2>1st Anniversary Special</h2>
+<p>20% OFF on Selected Treatments</p>
+<p>Laser · PRP · GFC · HydraFacial · Chemical Peel · Pico Laser</p>
+<p><strong>Valid till March 30</strong></p>
+<a href="tel:9080442303" class="btn btn-light">Claim Offer — Call Now</a>
+</div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="py-5">
+<div class="container">
+<h2 class="text-center">What We Treat</h2>
+<p class="text-center">Two specialties. One trusted clinic.</p>
+
+<div class="row mt-4">
+
+<div class="col-md-6">
+<h4>Cardiology</h4>
+<ul>
+<li>Consultation</li>
+<li>ECG</li>
+<li>Echocardiogram</li>
+<li>TMT Stress Test</li>
+<li>Holter Monitoring</li>
+<li>Angiography & Angioplasty</li>
+</ul>
+</div>
+
+<div class="col-md-6">
+<h4>Dermatology & Aesthetics</h4>
+<ul>
+<li>Laser Hair Removal</li>
+<li>Pico Laser & Carbon Peel</li>
+<li>PRP Hair Treatment</li>
+<li>GFC Hair Therapy</li>
+<li>HydraFacial</li>
+<li>Microneedling</li>
+<li>Chemical Peeling</li>
+<li>Tattoo & Mole Removal</li>
+</ul>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- TREATMENTS GRID -->
+<section id="treatments" class="py-5 bg-light">
+<div class="container text-center">
+
+<h2>All Treatments</h2>
+<p>Comprehensive care, every visit.</p>
+
+<div class="row g-4">
+
+<div class="col-md-3"><div class="card p-3">ECG & ECHO</div></div>
+<div class="col-md-3"><div class="card p-3">TMT Stress Test</div></div>
+<div class="col-md-3"><div class="card p-3">Holter Monitoring</div></div>
+<div class="col-md-3"><div class="card p-3">Angiography</div></div>
+
+<div class="col-md-3"><div class="card p-3">Laser Hair Removal</div></div>
+<div class="col-md-3"><div class="card p-3">PRP & GFC</div></div>
+<div class="col-md-3"><div class="card p-3">HydraFacial</div></div>
+<div class="col-md-3"><div class="card p-3">Pico Laser</div></div>
+
+<div class="col-md-3"><div class="card p-3">Microneedling</div></div>
+<div class="col-md-3"><div class="card p-3">Chemical Peel</div></div>
+<div class="col-md-3"><div class="card p-3">Tattoo Removal</div></div>
+<div class="col-md-3"><div class="card p-3">Acne Treatment</div></div>
+
+</div>
+</div>
+</section>
+
+<!-- DOCTORS -->
+<section id="doctors" class="py-5">
+<div class="container">
+
+<h2 class="text-center">Our Specialists</h2>
+
+<div class="row mt-5">
+
+<div class="card doctor-card p-4 text-center reveal">
+<span class="badge bg-danger mb-2">Cardiologist</span>
+<img src="https://i.ibb.co/wZ2J1g69/Dr-D-Suresh.jpg" class="rounded-circle mb-3">
+<h4>Dr. D. Suresh</h4>
+<p><strong>MD · DM (Cardiology)</strong></p>
+<p class="exp">Interventional Cardiologist</p>
+<p>13 Years Experience</p>
+</div>
+
+<div class="card doctor-card p-4 text-center reveal">
+<span class="badge bg-success mb-2">Dermatologist</span>
+<img src="https://images.unsplash.com/photo-1594824475317-3a2b2d3b6c68?q=80&w=400" class="rounded-circle mb-3">
+<h4>Dr. R. Sivayogana</h4>
+<p><strong>MD (DVL) · DNB (DVL)</strong></p>
+<p class="exp">Dermatologist & Cosmetologist</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<div id="reviewSlider" class="carousel slide mt-4" data-bs-ride="carousel">
+<div class="carousel-inner">
+
+<div class="carousel-item active">
+<div class="review-card">
+<p>“Very professional doctor. Clear diagnosis and excellent care.”</p>
+<h6>★★★★★</h6>
+</div>
+</div>
+
+<div class="carousel-item">
+<div class="review-card">
+<p>“Skin treatment results were amazing. Highly recommended clinic.”</p>
+<h6>★★★★★</h6>
+</div>
+</div>
+
+<div class="carousel-item">
+<div class="review-card">
+<p>“Good facilities and friendly staff. Easy consultation.”</p>
+<h6>★★★★★</h6>
+</div>
+</div>
+
+</div>
+</div>
+
+<!-- WHY US -->
+<section class="py-5 bg-light">
+<div class="container">
+
+<h2 class="text-center">Why Choose Us</h2>
+
+<div class="row mt-4">
+
+<div class="col-md-4"><p><strong>Specialist Doctors</strong><br>Advanced qualifications</p></div>
+<div class="col-md-4"><p><strong>In-House Diagnostics</strong><br>No referrals needed</p></div>
+<div class="col-md-4"><p><strong>Advanced Laser Tech</strong></p></div>
+<div class="col-md-4"><p><strong>4.8★ Rating</strong></p></div>
+<div class="col-md-4"><p><strong>Accessible Location</strong></p></div>
+<div class="col-md-4"><p><strong>Dual Specialty</strong></p></div>
+
+</div>
+</div>
+</section>
+
+<!-- RATE CARD -->
+<section id="pricing" class="py-5 text-center">
+<div class="container">
+
+<h2>Rate Card</h2>
+
+<div class="row g-4 mt-3">
+
+<div class="col-md-4"><div class="card p-3">Consultation ₹300</div></div>
+<div class="col-md-4"><div class="card p-3">HydraFacial ₹2500</div></div>
+<div class="col-md-4"><div class="card p-3">PRP ₹3500</div></div>
+
+</div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-5 bg-light">
+<div class="container text-center">
+
+<h2>Find Us</h2>
+
+<p>No. 13, Sangupani Vinayagar Kovil Street<br>
+Near Bus Stand, Kanchipuram, Tamil Nadu 631502</p>
+
+<p><strong>Phone:</strong> 090804 42303</p>
+
+<p><strong>Clinic Hours:</strong><br>
+Mon–Sat: 5:30 pm – 9:30 pm<br>
+Sunday: 9:00 am – 12:00 pm</p>
+
+</div>
+</section>
+<!-- GOOGLE REVIEWS -->
+<section id="reviews" class="section bg-light text-center">
+<div class="container">
+
+<h2>Patient Reviews</h2>
+
+<!-- Replace iframe with your Google Maps embed -->
+<iframe 
+src="https://www.google.com/maps?q=Kanchipuram&output=embed" 
+width="100%" height="300" style="border:0;" allowfullscreen loading="lazy">
+</iframe>
+
+
+
+
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center p-4">
+<p>© 2024 Jothi Heart & Skin Clinic</p>
+</footer>
+
+<a href="https://wa.me/919080442303" class="btn btn-success btn-lg mt-3">
+<i class="bi bi-whatsapp"></i> 
+</a>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    }
+  });
+});
+
+document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
+</script>
+
+
 </body>
 </html>
+
+<style>
+  /* GLOBAL */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #2c3e50;
+    background-color: #f8fafc;
+    line-height: 1.6;
+}
+
+/* NAVBAR */
+.navbar {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.navbar .nav-link {
+    color: #2c3e50;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.navbar .nav-link:hover {
+    color: #0d6efd;
+}
+
+/* HERO */
+.hero img {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+
+.carousel-caption {
+    bottom: 20%;
+}
+
+.carousel-caption h1 {
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+.carousel-caption p {
+    font-size: 1.2rem;
+}
+
+/* BUTTONS */
+.btn {
+    border-radius: 6px;
+    padding: 10px 18px;
+}
+
+.btn-success {
+    background-color: #25D366;
+    border: none;
+}
+
+.btn-success:hover {
+    background-color: #1ebe5d;
+}
+
+.btn-light {
+    background-color: #ffffff;
+    border: none;
+    color: #2c3e50;
+}
+
+/* SECTIONS */
+section {
+    padding: 60px 0;
+}
+
+h2 {
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+p.lead {
+    color: #555;
+}
+
+/* STATS */
+.bg-light {
+    background-color: #f1f5f9 !important;
+}
+
+/* OFFER HIGHLIGHT */
+.highlight {
+    background: linear-gradient(135deg, #0d6efd, #00c6ff);
+    color: #fff;
+}
+
+.highlight .btn {
+    background: #fff;
+    color: #0d6efd;
+    font-weight: 600;
+}
+
+/* CARDS */
+.card {
+    border: none;
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* DOCTORS */
+.card img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin: auto;
+}
+
+/* WHY US */
+#why-us p {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+/* RATE CARD */
+#pricing .card {
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+/* CONTACT */
+#contact p {
+    color: #444;
+}
+
+/* FOOTER */
+footer {
+    background: #1e293b;
+    font-size: 0.9rem;
+}
+
+/* FLOATING WHATSAPP BUTTON */
+a.btn-lg {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px) {
+    .carousel-caption h1 {
+        font-size: 1.6rem;
+    }
+
+    .carousel-caption p {
+        font-size: 1rem;
+    }
+}
+
+/* SCROLL ANIMATION */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s ease;
+}
+
+.reveal.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* HERO IMPROVEMENT */
+.hero img {
+    filter: brightness(60%) contrast(110%);
+}
+
+/* DOCTOR CARD PREMIUM */
+.doctor-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.doctor-card .badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 0.75rem;
+}
+
+.doctor-card .exp {
+    color: #0d6efd;
+    font-weight: 600;
+}
+
+/* REVIEW CARD */
+.review-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 600px;
+    margin: auto;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* PREMIUM SECTION LOOK */
+section {
+    position: relative;
+}
+
+section::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #0d6efd;
+    margin: 10px auto 0;
+}
+
+/* CARD HOVER ENHANCED */
+.card:hover {
+    transform: translateY(-8px) scale(1.02);
+}
+
+/* NAVBAR SCROLL EFFECT */
+.navbar.scrolled {
+    background: #ffffff !important;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+/* FLASH OVERLAY EFFECT */
+.carousel-item {
+    position: relative;
+    overflow: hidden;
+}
+
+/* animated light sweep */
+.carousel-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,0.4),
+        transparent
+    );
+    transform: skewX(-25deg);
+}
+
+/* trigger animation only on active slide */
+.carousel-item.active::before {
+    animation: flashSweep 1.5s ease;
+}
+
+@keyframes flashSweep {
+    0% { left: -75%; }
+    100% { left: 130%; }
+}
+</style>
