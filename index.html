@@ -10,6 +10,8 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<!-- Favicon -->
+<link rel="icon" type="image/jpeg" href="https://i.ibb.co/8DjMQVcC/Whats-App-Image-2026-03-16-at-22-59-59.jpg">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
 <link rel="stylesheet" href="assets/css/styles.css">
@@ -249,7 +251,7 @@ Led by specialist doctors serving Kanchipuram.
 <!-- OFFER -->
 <section class="py-5 text-center highlight">
 <div class="container">
-<h2>1st Anniversary Special</h2>
+<h2 style="color: white; border: none;">1st Anniversary Special</h2>
 <p>20% OFF on Selected Treatments</p>
 <p>Laser · PRP · GFC · HydraFacial · Chemical Peel · Pico Laser</p>
 <p><strong>Valid till March 30</strong></p>
@@ -296,7 +298,7 @@ Led by specialist doctors serving Kanchipuram.
 </section>
 
 <!-- TREATMENTS GRID -->
-<section id="treatments" class="py-5 bg-light">
+<section id="treatments" class="py-5" style="background: #cff4fc;">
 <div class="container text-center">
 
 <h2>All Treatments</h2>
@@ -325,33 +327,49 @@ Led by specialist doctors serving Kanchipuram.
 
 <!-- DOCTORS -->
 <section id="doctors" class="py-5">
-<div class="container">
+  <div class="container">
+    <h2 class="text-center mb-4">Our Specialists</h2>
 
-<h2 class="text-center">Our Specialists</h2>
+    <div class="row g-4">
 
-<div class="row mt-5">
+      <!-- Doctor 1: Cardiologist -->
+      <div class="col-lg-6 col-md-6 col-12">
+        <div class="card doctor-card p-4 text-center position-relative">
+          <span class="badge bg-danger mb-2">
+            <i class="bi bi-heart-fill text-white me-1"></i> <!-- Heart Icon -->
+            Cardiologist
+          </span>
+          <img src="https://i.ibb.co/wZ2J1g69/Dr-D-Suresh.jpg" class="rounded-2 mb-3" alt="Dr. D. Suresh">
+          <h4>Dr. D. Suresh</h4>
+          <p><strong>MD · DM (Cardiology)</strong></p>
+          <p class="exp">Interventional Cardiologist</p>
+          <p>13 Years Experience</p>
+        </div>
+      </div>
 
-<div class="card doctor-card p-4 text-center reveal">
-<span class="badge bg-danger mb-2">Cardiologist</span>
-<img src="https://i.ibb.co/wZ2J1g69/Dr-D-Suresh.jpg" class="rounded-circle mb-3">
-<h4>Dr. D. Suresh</h4>
-<p><strong>MD · DM (Cardiology)</strong></p>
-<p class="exp">Interventional Cardiologist</p>
-<p>13 Years Experience</p>
-</div>
+      <!-- Doctor 2: Dermatologist -->
+      <div class="col-lg-6 col-md-6 col-12">
+        <div class="card doctor-card p-4 text-center position-relative">
+          <span class="badge bg-success mb-2">
+            <i class="bi bi-emoji-smile text-white me-1"></i> <!-- Dermatology Icon -->
+            Dermatologist
+          </span>
+          <img src="https://i.ibb.co/wZ2J1g69/Dr-D-Suresh.jpg" class="rounded-2 mb-3" alt="Dr. R. Sivayogana">
+          <h4>Dr. R. Sivayogana</h4>
+          <p><strong>MD (DVL) · DNB (DVL)</strong></p>
+          <p class="exp">Dermatologist &amp; Cosmetologist</p>
+          <p>10 Years Experience</p>
+        </div>
+      </div>
 
-<div class="card doctor-card p-4 text-center reveal">
-<span class="badge bg-success mb-2">Dermatologist</span>
-<img src="https://images.unsplash.com/photo-1594824475317-3a2b2d3b6c68?q=80&w=400" class="rounded-circle mb-3">
-<h4>Dr. R. Sivayogana</h4>
-<p><strong>MD (DVL) · DNB (DVL)</strong></p>
-<p class="exp">Dermatologist & Cosmetologist</p>
-</div>
+    </div>
 
-</div>
-</div>
+    <!-- Section Separator -->
+    <hr class="my-5">
+
+  </div>
 </section>
-
+<!--  -->
 <div id="reviewSlider" class="carousel slide mt-4" data-bs-ride="carousel">
 <div class="carousel-inner">
 
@@ -464,7 +482,7 @@ Sunday: 9:00 am – 12:00 pm</p>
 
       <!-- About / Clinic Info -->
       <div class="col-md-4 mb-3">
-        <h5 class="text-warning"><i class="bi bi-heart-pulse-fill"></i> Jothi Heart & Skin Clinic</h5>
+        <h5 class="text-warning"><i class="bi bi-heart-pulse-fill me-2"></i>Jothi Heart &amp; Skin Clinic</h5>
         <p>Since 2024, delivering trusted cardiac care and advanced dermatology in Kanchipuram.</p>
       </div>
 
@@ -485,20 +503,57 @@ Sunday: 9:00 am – 12:00 pm</p>
       <div class="col-md-4 mb-3">
         <h5 class="text-warning">Contact</h5>
         <p>No. 13, Sangupani Vinayagar Kovil Street<br>Near Bus Stand, Kanchipuram, TN 631502</p>
-        <p><i class="bi bi-telephone-fill"></i> 090804 42303</p>
+        <p><i class="bi bi-telephone-fill me-2"></i>090804 42303</p>
       </div>
 
     </div>
 
     <hr style="border-color: rgba(255,255,255,0.2);">
 
+    <!-- Social Media Icons -->
+    <!-- Social Media Icons without <a>, clickable directly -->
+    <div class="text-center mb-3 social-icons">
+      <i class="bi bi-facebook fs-3 me-3" style="color:#1877F2; cursor:pointer;"
+        onclick="window.open('https://www.facebook.com/jothihsclinic','_blank')"></i>
+
+      <i class="bi bi-twitter fs-3 me-3" style="color:#1DA1F2; cursor:pointer;"
+        onclick="window.open('https://www.twitter.com/jothihsclinic','_blank')"></i>
+
+      <i class="bi bi-instagram fs-3 me-3" style="color:#E1306C; cursor:pointer;"
+        onclick="window.open('https://www.instagram.com/jothihsclinic','_blank')"></i>
+
+      <i class="bi bi-linkedin fs-3 me-3" style="color:#0077B5; cursor:pointer;"
+        onclick="window.open('https://www.linkedin.com/in/jothihsclinic','_blank')"></i>
+
+      <i class="bi bi-youtube fs-3" style="color:#FF0000; cursor:pointer;"
+        onclick="window.open('https://www.youtube.com/@jothihsclinic','_blank')"></i>
+    </div>
+
+
     <!-- Copyright -->
     <div class="text-center">
-      <p class="mb-0">© 2026 Jothi Heart & Skin Clinic | All Rights Reserved.</p>
+      <p class="mb-0">© 2026 Jothi Heart &amp; Skin Clinic | All Rights Reserved.</p>
     </div>
 
   </div>
 </footer>
+
+
+<!-- Hover effect CSS -->
+<style>
+  .social-icons i {
+    transition: transform 0.3s, text-shadow 0.3s, filter 0.3s;
+    cursor: pointer;
+  }
+  .social-icons i:hover {
+    transform: scale(1.3);
+    filter: drop-shadow(0 0 8px rgba(255,255,255,0.8));
+  }
+</style>
+
+
+
+
 <!-- whatapp btn -->
     <a href="https://wa.me/919080442303" class="btn btn-success btn-lg mt-3">
     <i class="bi bi-whatsapp"></i> 
@@ -582,6 +637,13 @@ body {
     line-height: 1.6;
 }
 
+h2 { 
+    color: #000;
+    font-family: cursive;
+    border-bottom: 2px solid #555;
+    display: inline-block;
+    padding-bottom: 4px;
+}  
 /* NAVBAR */
 .navbar {
     background: rgba(255, 255, 255, 0.95);
@@ -736,6 +798,13 @@ a.btn-lg {
     .carousel-caption p {
         font-size: 1rem;
     }
+
+    .doctor-card .badge {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    font-size: 0.55rem;
+    }
 }
 
 /* SCROLL ANIMATION */
@@ -842,3 +911,288 @@ section::after {
 }
 </style>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- SERVICES SLIDER (Bootstrap 5 + Iconify) -->
+<div id="servicesCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+
+    <!-- Slide 1 -->
+    <div class="carousel-item active">
+      <div class="d-flex justify-content-center flex-wrap">
+        <!-- ECG & ECHO -->
+        <div class="service-box text-center m-2 p-3 border border-info rounded" style="width: 180px;">
+          <span class="iconify" data-icon="healthicons:ecg" data-width="50" data-height="50"></span>
+          <p class="mt-2 fw-bold">ECG & ECHO</p>
+        </div>
+
+        <!-- TMT Stress Test -->
+        <div class="service-box text-center m-2 p-3 border border-info rounded" style="width: 180px;">
+          <span class="iconify" data-icon="mdi:heart-pulse" data-width="50" data-height="50"></span>
+          <p class="mt-2 fw-bold">TMT Stress Test</p>
+        </div>
+
+        <!-- Holter Monitoring -->
+        <div class="service-box text-center m-2 p-3 border border-info rounded" style="width: 180px;">
+          <span class="iconify" data-icon="medical-icon:holter" data-width="50" data-height="50"></span>
+          <p class="mt-2 fw-bold">Holter Monitoring</p>
+        </div>
+
+        <!-- Angiography -->
+        <div class="service-box text-center m-2 p-3 border border-info rounded" style="width: 180px;">
+          <span class="iconify" data-icon="mdi:heart" data-width="50" data-height="50"></span>
+          <p class="mt-2 fw-bold">Angiography</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="carousel-item">
+      <div class="d-flex justify-content-center flex-wrap">
+        <!-- Laser Hair Removal -->
+        <div class="service-box text-center m-2 p-3 border border-info rounded" style="width: 180px;">
+          <span class="iconify" data-icon="mdi:laser-sword" data-width="50" data-height="50"></span>
+          <p class="mt-2 fw-bold">Laser Hair Removal</p>
+        </div>
+
+        <!-- PRP & GFC -->
+        <div class="service-box text-center m-2 p-3 border border-info rounded" style="width: 180px;">
+          <span class="iconify" data-icon="mdi:blood-bag" data-width="50" data-height="50"></span>
+          <p class="mt-2 fw-bold">PRP & GFC</p>
+        </div>
+
+        <!-- HydraFacial -->
+        <div class="service-box text-center m-2 p-3 border border-info rounded" style="width: 180px;">
+          <span class="iconify" data-icon="mdi:water" data-width="50" data-height="50"></span>
+          <p class="mt-2 fw-bold">HydraFacial</p>
+        </div>
+
+        <!-- Pico Laser -->
+        <div class="service-box text-center m-2 p-3 border border-info rounded" style="width: 180px;">
+          <span class="iconify" data-icon="mdi:flash" data-width="50" data-height="50"></span>
+          <p class="mt-2 fw-bold">Pico Laser</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="carousel-item">
+      <div class="d-flex justify-content-center flex-wrap">
+        <!-- Microneedling -->
+        <div class="service-box text-center m-2 p-3 border border-info rounded" style="width: 180px;">
+          <span class="iconify" data-icon="mdi:needle" data-width="50" data-height="50"></span>
+          <p class="mt-2 fw-bold">Microneedling</p>
+        </div>
+
+        <!-- Chemical Peel -->
+        <div class="service-box text-center m-2 p-3 border border-info rounded" style="width: 180px;">
+          <span class="iconify" data-icon="mdi:flask-outline" data-width="50" data-height="50"></span>
+          <p class="mt-2 fw-bold">Chemical Peel</p>
+        </div>
+
+        <!-- Tattoo Removal -->
+        <div class="service-box text-center m-2 p-3 border border-info rounded" style="width: 180px;">
+          <span class="iconify" data-icon="mdi:erase" data-width="50" data-height="50"></span>
+          <p class="mt-2 fw-bold">Tattoo Removal</p>
+        </div>
+
+        <!-- Acne Treatment -->
+        <div class="service-box text-center m-2 p-3 border border-info rounded" style="width: 180px;">
+          <span class="iconify" data-icon="mdi:face-woman-shimmer" data-width="50" data-height="50"></span>
+          <p class="mt-2 fw-bold">Acne Treatment</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Carousel Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#servicesCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#servicesCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  </button>
+</div>
+
+<!-- Iconify Script -->
+<script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+
+<!-- Optional: Responsive Styling -->
+<style>
+.service-box p {
+    font-size: 0.9rem;
+}
+@media (max-width: 576px) {
+    .service-box {
+        width: 140px !important;
+        padding: 10px !important;
+    }
+    .service-box span {
+        width: 40px !important;
+        height: 40px !important;
+    }
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="Awareness-section py-5">
+  <div class="container">
+    <div class="row mb-4">
+      <div class="col-lg-12 text-center">
+        <h3>Awareness Videos</h3>
+        <h6>Doctors share knowledge to improve your health</h6>
+      </div>
+    </div>
+
+    <!-- Bootstrap 5 Carousel -->
+    <div id="videoCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <div class="d-flex justify-content-start gap-3 flex-nowrap">
+            <div class="video-box">
+              <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/K_tIykTIqHM" title="Video 1" allowfullscreen></iframe>
+              </div>
+              <p class="mt-2 text-center">Basic Skin Care Routine | Healthy Skin</p>
+            </div>
+            <div class="video-box">
+              <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/YuS9TTWgHoo" title="Video 2" allowfullscreen></iframe>
+              </div>
+              <p class="mt-2 text-center">How To Find Your Skin Type?</p>
+            </div>
+            <div class="video-box">
+              <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/Cv3PAWjz48Q" title="Video 3" allowfullscreen></iframe>
+              </div>
+              <p class="mt-2 text-center">Best Moisturisers for Kids</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <div class="d-flex justify-content-start gap-3 flex-nowrap">
+            <div class="video-box">
+              <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/8yj0GaHG8a8" title="Video 4" allowfullscreen></iframe>
+              </div>
+              <p class="mt-2 text-center">Advanced Skincare Tips</p>
+            </div>
+            <div class="video-box">
+              <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/K_tIykTIqHM" title="Video 5" allowfullscreen></iframe>
+              </div>
+              <p class="mt-2 text-center">Basic Skin Care Routine | Healthy Skin</p>
+            </div>
+            <div class="video-box">
+              <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/YuS9TTWgHoo" title="Video 6" allowfullscreen></iframe>
+              </div>
+              <p class="mt-2 text-center">How To Find Your Skin Type?</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#videoCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="text-center mt-3">
+      <a href="https://www.jothihsclinic.com/awareness" class="btn btn-primary">View All</a>
+    </div>
+  </div>
+</section>
+
+
+<style>
+/* Video box responsive widths */
+.video-box {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+@media (min-width: 768px) {
+  /* Tablets: 2 videos per row */
+  .video-box {
+    flex: 0 0 48%;
+  }
+}
+@media (min-width: 992px) {
+  /* Desktop: 3 videos per row */
+  .video-box {
+    flex: 0 0 32%;
+  }
+}
+
+/* Carousel control buttons bigger on small screens */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}
+@media (max-width: 767.98px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 10%;
+  }
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: 100%, 100%;
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
