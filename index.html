@@ -10,8 +10,148 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
 <link rel="stylesheet" href="assets/css/styles.css">
+<!-- SEO SCHEMA -->
+
+    <!-- Changes in SEO SCHEMA :
+    1.Website URL "url": "https://jothihsclinic.com/"
+    2."email": "yourclinicemail@gmail.com"
+    3.Social Media:
+    "sameAs": [
+    "https://www.facebook.com/yourpage",
+    "https://www.instagram.com/yourpage",
+    "https://www.youtube.com/@yourchannel"
+    ]
+    4.Reviews with actual reviews -->
+    <script type="application/ld+json">
+    {
+    "@context": "https://schema.org",
+    "@type": "Hospital",
+
+    "name": "Jothi Heart & Skin Clinic",
+    "url": "https://jothihsclinic.com/",
+    "priceRange": "₹300 - ₹5000",
+
+    "image": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2",
+
+    "description": "Jothi Heart & Skin Clinic is a modern dual-specialty clinic in Kanchipuram offering expert cardiology and advanced dermatology & aesthetic treatments including ECG, Echo, PRP, Laser, HydraFacial, and more.",
+
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "No. 13, Sangupani Vinayagar Kovil Street",
+        "addressLocality": "Kanchipuram",
+        "addressRegion": "Tamil Nadu",
+        "postalCode": "631502",
+        "addressCountry": "IN"
+    },
+
+    "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 12.8378595,
+        "longitude": 79.7062666
+    },
+
+    "hasMap": "https://www.google.com/maps/place/Jothi+Heart+%26+Skin+Clinic/@12.8378595,79.7062666,17z",
+
+    "telephone": "+91-9080442303",
+
+    "email": "yourclinicemail@gmail.com",
+
+    "openingHoursSpecification": [
+        {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+        "opens": "17:30",
+        "closes": "21:30"
+        },
+        {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Sunday",
+        "opens": "09:00",
+        "closes": "12:00"
+        }
+    ],
+
+    "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "70"
+    },
+
+    "review": [
+        {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": "Patient" },
+        "datePublished": "2026-01-10",
+        "reviewBody": "Very professional doctor. Clear diagnosis and excellent care."
+        },
+        {
+        "@type": "Review",
+        "author": { "@type": "Person", "name": "Patient" },
+        "datePublished": "2026-01-08",
+        "reviewBody": "Skin treatment results were amazing. Highly recommended clinic."
+        }
+    ],
+
+    "department": [
+        {
+        "@type": "MedicalSpecialty",
+        "name": "Cardiology",
+        "availableService": [
+            { "@type": "MedicalProcedure", "name": "Consultation" },
+            { "@type": "MedicalProcedure", "name": "ECG" },
+            { "@type": "MedicalProcedure", "name": "Echocardiogram" },
+            { "@type": "MedicalProcedure", "name": "TMT Stress Test" },
+            { "@type": "MedicalProcedure", "name": "Holter Monitoring" },
+            { "@type": "MedicalProcedure", "name": "Angiography" },
+            { "@type": "MedicalProcedure", "name": "Angioplasty" }
+        ]
+        },
+        {
+        "@type": "MedicalSpecialty",
+        "name": "Dermatology",
+        "availableService": [
+            { "@type": "MedicalProcedure", "name": "Laser Hair Removal" },
+            { "@type": "MedicalProcedure", "name": "Pico Laser & Carbon Peel" },
+            { "@type": "MedicalProcedure", "name": "HydraFacial" },
+            { "@type": "MedicalProcedure", "name": "Chemical Peel" },
+            { "@type": "MedicalProcedure", "name": "Microneedling" },
+            { "@type": "MedicalProcedure", "name": "Tattoo & Mole Removal" },
+            { "@type": "MedicalProcedure", "name": "Acne Treatment" }
+        ]
+        },
+        {
+        "@type": "MedicalSpecialty",
+        "name": "Hair Restoration",
+        "availableService": [
+            { "@type": "MedicalProcedure", "name": "PRP (Platelet-Rich Plasma)" },
+            { "@type": "MedicalProcedure", "name": "GFC (Growth Factor Concentrate)" }
+        ]
+        }
+    ],
+
+    "physician": [
+        {
+        "@type": "Person",
+        "name": "Dr. D. Suresh",
+        "jobTitle": "Interventional Cardiologist"
+        },
+        {
+        "@type": "Person",
+        "name": "Dr. R. Sivayogana",
+        "jobTitle": "Dermatologist & Cosmetologist"
+        }
+    ],
+
+    "sameAs": [
+        "https://www.facebook.com/yourpage",
+        "https://www.instagram.com/yourpage",
+        "https://www.youtube.com/@yourchannel"
+    ]
+    }
+    </script>
 </head>
 
 <body>
@@ -354,33 +494,84 @@ Sunday: 9:00 am – 12:00 pm</p>
 
     <!-- Copyright -->
     <div class="text-center">
-      <p class="mb-0">© 2026 Jothi Heart & Skin Clinic</p>
+      <p class="mb-0">© 2026 Jothi Heart & Skin Clinic | All Rights Reserved.</p>
     </div>
 
   </div>
 </footer>
+<!-- whatapp btn -->
+    <a href="https://wa.me/919080442303" class="btn btn-success btn-lg mt-3">
+    <i class="bi bi-whatsapp"></i> 
+    </a>
 
-<a href="https://wa.me/919080442303" class="btn btn-success btn-lg mt-3">
-<i class="bi bi-whatsapp"></i> 
-</a>
+    <script>
+    const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+        }
+    });
+    });
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
+    </script>
 
-<script>
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("show");
+<!-- BACK TO TOP BUTTON (Bootstrap Only) -->
+    <button id="backToTop" class="btn btn-primary shadow">
+    <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <style>
+    #backToTop {
+        position: fixed;
+        bottom: 90px; /* above WhatsApp button */
+        right: 20px;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        z-index: 999;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        opacity: 0; /* hidden initially */
+        pointer-events: none; /* prevent click when hidden */
+        transition: opacity 0.4s ease; /* smooth fade */
     }
-  });
-});
 
-document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
-</script>
+    #backToTop.show {
+        opacity: 1;
+        pointer-events: auto; /* enable click when shown */
+    }
 
+    #backToTop:hover {
+        background-color: #0b5ed7;
+        color: #fff;
+    }
+    </style>
+
+    <script>
+    const backToTopBtn = document.getElementById("backToTop");
+
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 3000) { // show after 3000px
+            backToTopBtn.classList.add("show");
+        } else {
+            backToTopBtn.classList.remove("show");
+        }
+    });
+
+    backToTopBtn.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+    </script>
 
 </body>
-</html>
+
 
 <style>
   /* GLOBAL */
@@ -650,3 +841,4 @@ section::after {
     100% { left: 130%; }
 }
 </style>
+</html>
