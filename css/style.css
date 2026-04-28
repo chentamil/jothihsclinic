@@ -399,3 +399,8 @@ background: #ffd700; */
         color: #fff;
     }
 
+.jhs-pages-image    {
+  max-height: 450px;
+  object-fit: cover;
+}
+
