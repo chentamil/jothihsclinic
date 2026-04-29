@@ -358,6 +358,83 @@
         </div>
     </section>
 
+
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-6">
+
+      <div class="card shadow-sm">
+        <div class="card-body p-4">
+
+          <h4 class="mb-3 text-center">Contact Us</h4>
+
+          <div id="formAlert2" class="alert d-none"></div>
+
+          <form id="jewelForm">
+
+            <input type="hidden" name="site" value="sridhanalakshmijewellers.com">
+
+            <!-- Honeypot -->
+            <input type="text" name="website" class="d-none" autocomplete="off">
+
+            <input type="text" name="name" class="form-control mb-3" placeholder="Name" required>
+            <input type="email" name="email" class="form-control mb-3" placeholder="Email" required>
+
+            <textarea name="message" class="form-control mb-3" placeholder="Message"></textarea>
+
+            <button class="btn btn-dark w-100">Send Message</button>
+
+          </form>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script>
+const form2 = document.getElementById("jewelForm");
+const alertBox2 = document.getElementById("formAlert2");
+
+form2.addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const data = Object.fromEntries(new FormData(form2));
+
+  try {
+    const res = await fetch("https://silent-hall-cc73.chentamil1988.workers.dev", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(data)
+    });
+
+    const result = await res.json();
+
+    if (!res.ok) {
+      throw new Error(result.error || "Failed");
+    }
+
+    alertBox2.className = "alert alert-success";
+    alertBox2.innerHTML = "✅ Message sent successfully!";
+    alertBox2.classList.remove("d-none");
+
+    alert("✅ Message sent success!");
+    form2.reset();
+
+  } catch (err) {
+
+    alertBox2.className = "alert alert-danger";
+    alertBox2.innerHTML = "❌ Error sending message";
+    alertBox2.classList.remove("d-none");
+
+    alert("❌ Error sending message");
+    console.error(err);
+  }
+});
+</script>
   </main>
 
    <!-- FOOTER -->

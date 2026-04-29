@@ -848,37 +848,121 @@
                 </div>
             </section>
 
-<form id="jewelForm">
+<div class="container py-5">
+  <div class="row justify-content-center">
+    <div class="col-lg-8">
 
-  <input type="hidden" name="site" value="jewels">
+      <div class="card shadow-sm">
+        <div class="card-body p-4">
 
-  <input type="text" name="name" placeholder="Name" required>
-  <input type="email" name="email" placeholder="Email" required>
+          <h4 class="mb-3 text-center">Book Appointment</h4>
 
-  <!-- Honeypot -->
-  <input type="text" name="website" style="display:none" autocomplete="off">
+          <!-- Alert -->
+          <div id="formAlert" class="alert d-none" role="alert"></div>
 
-  <textarea name="message" placeholder="Message"></textarea>
+          <form id="clinicForm">
 
-  <button type="submit">Send</button>
-</form>
+            <input type="hidden" name="site" value="jothiheartandskin.com">
+
+            <!-- Honeypot -->
+            <input type="text" name="website" class="d-none" autocomplete="off">
+
+            <div class="row g-3">
+
+              <div class="col-md-6">
+                <input type="text" name="name" class="form-control" placeholder="Name" required>
+              </div>
+
+              <div class="col-md-6">
+                <input type="email" name="email" class="form-control" placeholder="Email" required>
+              </div>
+
+              <div class="col-md-6">
+                <input type="tel" name="mobile" class="form-control" placeholder="Mobile">
+              </div>
+
+              <div class="col-md-6">
+                <input type="number" name="age" class="form-control" placeholder="Age">
+              </div>
+
+              <div class="col-md-6">
+                <select name="gender" class="form-select">
+                  <option value="">Gender</option>
+                  <option>Male</option>
+                  <option>Female</option>
+                </select>
+              </div>
+
+              <div class="col-md-6">
+                <input type="date" name="appoint_date" class="form-control">
+              </div>
+
+              <div class="col-md-6">
+                <input type="time" name="time" class="form-control">
+              </div>
+
+              <div class="col-12">
+                <textarea name="message" class="form-control" rows="3" placeholder="Message"></textarea>
+              </div>
+
+              <div class="col-12 text-center">
+                <button class="btn btn-primary px-4" type="submit">
+                  Submit
+                </button>
+              </div>
+
+            </div>
+          </form>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
 
 <script>
-document.getElementById("jewelForm").addEventListener("submit", async (e) => {
+const form = document.getElementById("clinicForm");
+const alertBox = document.getElementById("formAlert");
+
+form.addEventListener("submit", async (e) => {
   e.preventDefault();
 
-  const data = Object.fromEntries(new FormData(e.target));
+  const data = Object.fromEntries(new FormData(form));
 
-  await fetch("https://silent-hall-cc73.chentamil1988.workers.dev", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify(data)
-  });
+  try {
+    const res = await fetch("https://silent-hall-cc73.chentamil1988.workers.dev", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(data)
+    });
 
-  alert("Message sent!");
-  e.target.reset();
+    const result = await res.json();
+
+    if (!res.ok) {
+      throw new Error(result.error || "Failed");
+    }
+
+    // ✅ SUCCESS UI
+    alertBox.className = "alert alert-success";
+    alertBox.innerHTML = "✅ Message sent successfully!";
+    alertBox.classList.remove("d-none");
+
+    alert("✅ Message sent success!");
+    form.reset();
+
+  } catch (err) {
+
+    // ❌ ERROR UI (includes honeypot block)
+    alertBox.className = "alert alert-danger";
+    alertBox.innerHTML = "❌ Error sending message";
+    alertBox.classList.remove("d-none");
+
+    alert("❌ Error sending message");
+    console.error(err);
+  }
 });
 </script>
 
