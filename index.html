@@ -848,48 +848,51 @@
                 </div>
             </section>
 
-<form id="contact-form">
-  <input type="text" name="name" placeholder="Your name" required />
-  <input type="email" name="email" placeholder="Your email" required />
+<form id="clinicForm">
+
+  <input type="hidden" name="site" value="clinic">
+
+  <input type="text" name="name" placeholder="Name" required>
+  <input type="email" name="email" placeholder="Email" required>
+
+  <!-- Honeypot -->
   <input type="text" name="website" style="display:none" autocomplete="off">
-  <textarea name="message" placeholder="Your message"></textarea>
-  <button type="submit">Send</button>
+
+  <input type="tel" name="mobile" placeholder="Mobile">
+  <input type="number" name="age" placeholder="Age">
+
+  <select name="gender">
+    <option value="">Gender</option>
+    <option>Male</option>
+    <option>Female</option>
+  </select>
+
+  <input type="date" name="appoint_date">
+  <input type="time" name="time">
+
+  <textarea name="message" placeholder="Message"></textarea>
+
+  <button type="submit">Book Appointment</button>
 </form>
 
 <script>
-document.getElementById("contact-form").addEventListener("submit", async (e) => {
+document.getElementById("clinicForm").addEventListener("submit", async (e) => {
   e.preventDefault();
 
-  const form = e.target;
+  const data = Object.fromEntries(new FormData(e.target));
 
-  const data = {
-    name: form.name.value,
-    email: form.email.value,
-    message: form.message.value,
-    website: form.website.value  
-  };
+  await fetch("https://silent-hall-cc73.chentamil1988.workers.dev", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(data)
+  });
 
-  try {
-    const res = await fetch("https://silent-hall-cc73.chentamil1988.workers.dev", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(data)
-    });
-
-    const result = await res.json();
-
-    alert("✅ Message sent success!");
-    form.reset();
-
-  } catch (err) {
-    alert("❌ Error sending message");
-    console.error(err);
-  }
+  alert("Appointment sent!");
+  e.target.reset();
 });
 </script>
-
 
   </main>
 
