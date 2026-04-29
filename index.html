@@ -848,82 +848,92 @@
                 </div>
             </section>
 
-<div class="container py-5">
-  <div class="row justify-content-center">
-    <div class="col-lg-8">
+<hr class="m-0">
+<section id="contactform" class="text-center bg-white">
+  <div class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
 
-      <div class="card shadow-sm">
-        <div class="card-body p-4">
+        <div class="card shadow-lg">
+          <div class="card-body p-4">
 
-          <h4 class="mb-3 text-center">Book Appointment</h4>
+            <h2 class="mb-3 text-center">Book Appointment</h2>
 
-          <!-- Alert -->
-          <div id="formAlert" class="alert d-none" role="alert"></div>
+            <!-- Alert -->
+            <div id="formAlert" class="alert d-none" role="alert"></div>
 
-          <form id="clinicForm">
+            <form id="clinicForm">
 
-            <input type="hidden" name="site" value="jothiheartandskin.com">
+              <input type="hidden" name="site" value="jothiheartandskin.com">
 
-            <!-- Honeypot -->
-            <input type="text" name="website" class="d-none" autocomplete="off">
+              <!-- Honeypot -->
+              <input type="text" name="website" class="d-none" autocomplete="off">
 
-            <div class="row g-3">
+              <div class="row g-3">
 
-              <div class="col-md-6">
-                <input type="text" name="name" class="form-control" placeholder="Name" required>
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Name" required>
+                </div>
+
+                <div class="col-md-6">
+                  <input type="email" name="email" class="form-control" placeholder="Email" required>
+                </div>
+
+                <div class="col-md-6">
+                  <input type="tel" name="mobile" class="form-control" placeholder="Mobile">
+                </div>
+
+                <div class="col-md-6">
+                  <input type="number" name="age" class="form-control" placeholder="Age">
+                </div>
+
+                <div class="col-md-6">
+                  <select name="gender" class="form-select">
+                    <option value="">Gender</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                  </select>
+                </div>
+
+                <div class="col-md-6">
+                  <input type="date" name="appoint_date" class="form-control">
+                </div>
+
+                <div class="col-md-6">
+                  <input type="time" name="time" class="form-control">
+                </div>
+
+                <div class="col-12">
+                  <textarea name="message" class="form-control" rows="3" placeholder="Message"></textarea>
+                </div>
+
+                <div class="col-12 text-center">
+                  <button class="btn btn-primary px-4" type="submit">
+                    Submit
+                  </button>
+                </div>
+
               </div>
+            </form>
 
-              <div class="col-md-6">
-                <input type="email" name="email" class="form-control" placeholder="Email" required>
-              </div>
-
-              <div class="col-md-6">
-                <input type="tel" name="mobile" class="form-control" placeholder="Mobile">
-              </div>
-
-              <div class="col-md-6">
-                <input type="number" name="age" class="form-control" placeholder="Age">
-              </div>
-
-              <div class="col-md-6">
-                <select name="gender" class="form-select">
-                  <option value="">Gender</option>
-                  <option>Male</option>
-                  <option>Female</option>
-                </select>
-              </div>
-
-              <div class="col-md-6">
-                <input type="date" name="appoint_date" class="form-control">
-              </div>
-
-              <div class="col-md-6">
-                <input type="time" name="time" class="form-control">
-              </div>
-
-              <div class="col-12">
-                <textarea name="message" class="form-control" rows="3" placeholder="Message"></textarea>
-              </div>
-
-              <div class="col-12 text-center">
-                <button class="btn btn-primary px-4" type="submit">
-                  Submit
-                </button>
-              </div>
-
-            </div>
-          </form>
-
+          </div>
         </div>
-      </div>
 
+      </div>
     </div>
   </div>
-</div>
+</section>
 
 <script>
 const form = document.getElementById("clinicForm");
 const alertBox = document.getElementById("formAlert");
+
+// Set minimum date = today
+const dateInput = document.querySelector('input[name="appoint_date"]');
+
+const today = new Date().toISOString().split("T")[0];
+dateInput.setAttribute("min", today);
+//
 
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
