@@ -848,9 +848,9 @@
                 </div>
             </section>
 
-<form id="clinicForm">
+<form id="jewelForm">
 
-  <input type="hidden" name="site" value="clinic">
+  <input type="hidden" name="site" value="jewels">
 
   <input type="text" name="name" placeholder="Name" required>
   <input type="email" name="email" placeholder="Email" required>
@@ -858,25 +858,13 @@
   <!-- Honeypot -->
   <input type="text" name="website" style="display:none" autocomplete="off">
 
-  <input type="tel" name="mobile" placeholder="Mobile">
-  <input type="number" name="age" placeholder="Age">
-
-  <select name="gender">
-    <option value="">Gender</option>
-    <option>Male</option>
-    <option>Female</option>
-  </select>
-
-  <input type="date" name="appoint_date">
-  <input type="time" name="time">
-
   <textarea name="message" placeholder="Message"></textarea>
 
-  <button type="submit">Book Appointment</button>
+  <button type="submit">Send</button>
 </form>
 
 <script>
-document.getElementById("clinicForm").addEventListener("submit", async (e) => {
+document.getElementById("jewelForm").addEventListener("submit", async (e) => {
   e.preventDefault();
 
   const data = Object.fromEntries(new FormData(e.target));
@@ -889,7 +877,7 @@ document.getElementById("clinicForm").addEventListener("submit", async (e) => {
     body: JSON.stringify(data)
   });
 
-  alert("Appointment sent!");
+  alert("Message sent!");
   e.target.reset();
 });
 </script>
