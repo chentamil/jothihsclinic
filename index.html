@@ -851,7 +851,7 @@
 <form id="contact-form">
   <input type="text" name="name" placeholder="Your name" required />
   <input type="email" name="email" placeholder="Your email" required />
-  <input type="text" name="website" style="display:none">
+  <input type="text" name="website" style="display:none" autocomplete="off">
   <textarea name="message" placeholder="Your message"></textarea>
   <button type="submit">Send</button>
 </form>
@@ -865,7 +865,8 @@ document.getElementById("contact-form").addEventListener("submit", async (e) => 
   const data = {
     name: form.name.value,
     email: form.email.value,
-    message: form.message.value
+    message: form.message.value,
+    website: form.website.value  
   };
 
   try {
@@ -879,7 +880,7 @@ document.getElementById("contact-form").addEventListener("submit", async (e) => 
 
     const result = await res.json();
 
-    alert("✅ Message sent!");
+    alert("✅ Message sent success!");
     form.reset();
 
   } catch (err) {
