@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
     
-        Cardiology, Skin and Hair Care Hospital in Kanchipuram | Jothi Heart & Skin Clinic | Jothi Heart & Skin Clinic
+        Cardiology, Skin and Hair Care Hospital in Kanchipuram | Best Cardiologist in Kanchipuram | Best Dermatologist in kanchipuram | Jothi Heart & Skin Clinic
     
     </title>
-    <meta name="description"
-        content="Expert cardiac care and advanced dermatology & aesthetics under one roof in Kanchipuram.">
+    <meta name="description" content="Expert cardiac care and advanced dermatology & aesthetics under one roof in Kanchipuram.Offers ECG, Echo, laser treatments, PRP, and advanced dermatology care.">
+    <meta property="og:title" content="Best Heart & Skin Clinic in Kanchipuram">
+    <meta property="og:description" content="Expert cardiology and dermatology treatments with advanced technology.">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -215,10 +216,54 @@
                   <li class="nav-item"><a class="nav-link" href="/#pricing">Rate Card</a></li>
                   <li class="nav-item"><a class="nav-link" href="/#contact">Location</a></li>
                 </ul>
+                <a href="pages/appointment" class="fs-6 btn btn-sm btn-custom text-center text-white">Book Appointment</a>
               </div>
             </div>
         </div>
     </nav>
+
+<style>
+  .btn-custom {
+    position: relative; /* Needed for pseudo-element positioning */
+    border-radius: 50px;
+    padding: 10px 25px;
+    background: #062269;
+    color: #fff;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    overflow: hidden; /* To contain the pseudo-element */
+  }
+
+  /* Hover effect with diagonal flash */
+  .btn-custom:hover::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%; /* Start off-screen on the left */
+    width: 200%; /* Make it wide enough to cover the button diagonally */
+    height: 100%;
+    background: linear-gradient(135deg, transparent, rgba(255,255,255,0.6), transparent);
+    transform: skewX(-20deg); /* Skew to create diagonal effect */
+    animation: flashDiagonal 0.6s forwards;
+    pointer-events: none; /* So it doesn't block interactions */
+  }
+
+  /* Keyframes for the diagonal flash animation */
+  @keyframes flashDiagonal {
+    from {
+      left: -100%;
+    }
+    to {
+      left: 100%;
+    }
+  }
+
+  /* Optional: keep background on hover as you had before */
+  .btn-custom:hover {
+    background: #1da3a6;   /* comment this rule if u want transparent bg */
+    border: 1px solid #fff;
+  }
+</style>
 
   <main>
     
@@ -430,85 +475,85 @@
 
 <div class="col-md-3">
   <a href="/pages/cardiology-consultation" class="text-decoration-none text-black">
-    <div class="card p-3">Cardiology Consultation</div>
+    <div class="card p-3 cus-blue-bg fw-bold">Cardiology Consultation</div>
   </a>
 </div>
 
 <div class="col-md-3">
   <a href="/pages/ecg" class="text-decoration-none text-black">
-    <div class="card p-3">ECG</div>
+    <div class="card p-3 cus-blue-bg fw-bold">ECG</div>
   </a>
 </div>
 
 <div class="col-md-3">
   <a href="/pages/echocardiogram" class="text-decoration-none text-black">
-    <div class="card p-3">ECHO</div>
+    <div class="card p-3 cus-blue-bg fw-bold">ECHO</div>
   </a>
 </div>
 
 <div class="col-md-3">
   <a href="/pages/treadmill-test" class="text-decoration-none text-black">
-    <div class="card p-3">TMT Stress Test</div>
+    <div class="card p-3 cus-blue-bg fw-bold">TMT Stress Test</div>
   </a>
 </div>
 
 <div class="col-md-3">
   <a href="/pages/holter-monitoring" class="text-decoration-none text-black">
-    <div class="card p-3">Holter Monitoring</div>
+    <div class="card p-3 cus-blue-bg fw-bold">Holter Monitoring</div>
   </a>
 </div>
 
 <div class="col-md-3">
   <a href="/pages/coronary-angioplasty" class="text-decoration-none text-black">
-    <div class="card p-3">Angioplasty</div>
+    <div class="card p-3 cus-blue-bg fw-bold">Angioplasty</div>
   </a>
 </div>
 
 <div class="col-md-3">
   <a href="/pages/laser-hair-removal" class="text-decoration-none text-black">
-    <div class="card p-3">Laser Hair Removal</div>
+    <div class="card p-3 cus-blue-bg fw-bold">Laser Hair Removal</div>
   </a>
 </div>
 
 <div class="col-md-3">
   <a href="/pages/prp-hair-treatment" class="text-decoration-none text-black">
-    <div class="card p-3">PRP & GFC</div>
+    <div class="card p-3 cus-blue-bg fw-bold">PRP & GFC</div>
   </a>
 </div>
 
 <div class="col-md-3">
   <a href="/pages/hydrafacial" class="text-decoration-none text-black">
-    <div class="card p-3">HydraFacial</div>
+    <div class="card p-3 cus-blue-bg fw-bold">HydraFacial</div>
   </a>
 </div>
 
 <div class="col-md-3">
   <a href="/pages/pico-laser-carbon-peel" class="text-decoration-none text-black">
-    <div class="card p-3">Pico Laser</div>
+    <div class="card p-3 cus-blue-bg fw-bold">Pico Laser</div>
   </a>
 </div>
 
 <div class="col-md-3">
   <a href="/pages/microneedling" class="text-decoration-none text-black">
-    <div class="card p-3">Microneedling</div>
+    <div class="card p-3 cus-blue-bg fw-bold">Microneedling</div>
   </a>
 </div>
 
 <div class="col-md-3">
   <a href="/pages/chemical-peeling" class="text-decoration-none text-black">
-    <div class="card p-3">Chemical Peel</div>
+    <div class="card p-3 cus-blue-bg fw-bold">Chemical Peel</div>
   </a>
 </div>
 
 <div class="col-md-3">
   <a href="/pages/tattoo-mole-removal" class="text-decoration-none text-black">
-    <div class="card p-3">Tattoo Removal</div>
+    <div class="card p-3 cus-blue-bg fw-bold">Tattoo Removal</div>
   </a>
 </div>
 
 <div class="col-md-3">
   <a href="/pages/acne-treatment" class="text-decoration-none text-black">
-    <div class="card p-3">Acne Treatment</div>
+    <div class="card p-3 cus-blue-bg fw-bold">Acne Treatment</div>
   </a>
 </div>
 
@@ -521,6 +566,11 @@
   transform: scale(1.03);
   transition: 0.2s;
   cursor: pointer;
+}
+
+.cus-blue-bg {
+    background: linear-gradient(135deg, #007CC1 0%, #07488E 100%);
+    color: #fff;
 }
 </style>
 <!-- DOCTORS -->
@@ -551,6 +601,8 @@
             <h5>MD · DM (Cardiology)</h5>
             <p>Interventional Cardiologist with 13+ years of experience.</p>
             <a href="#">View Profile</a>
+            <br>
+            <a href="pages/appointment" class="mt-2 btn btn-sm btn-custom text-center text-white bg-danger">Book Appointment</a>
           </div>
 
         </div>
@@ -569,6 +621,8 @@
             <h5>MD (DVL) · DNB (DVL)</h5>
             <p>Dermatologist & Cosmetologist with 10+ years experience.</p>
             <a href="#">View Profile</a>
+            <br>
+            <a href="pages/appointment" class="mt-2  btn btn-sm btn-custom text-center text-white">Book Appointment</a>
           </div>
 
         </div>
@@ -733,9 +787,13 @@
     <section id="contact" class="text-center border border-warning border-2 rounded-3 m-4">
         <div class="container">
             <h2>Visit Our Clinic</h2>
-            <p><a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3910.252848312899!2d79.7062666!3d12.8378595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52c3e547020743%3A0xbc10c415b877c2d1!2sJothi%20Heart%20%26%20Skin%20Clinic!5e0!3m2!1sen!2sin!4v1697839999999!5m2!1sen!2sin" target="_blank" class="text-decoration-none">
-  <p class="mb-0"><i class="bi bi-geo-alt me-2"></i>No. 13, Sangupani Vinayagar Kovil Street,Near Bus Stand, Kanchipuram, TN 631502 <i class="bi bi-box-arrow-up-right ms-1"></i></p>
-</a></p>
+            <h3><strong> Jothi Heart & Skin Clinic </strong></h3>
+            <p><a href="https://www.google.com/maps/dir//Jothi+Heart+%26+Skin+Clinic,+13,+Sangupani+Vinayagar+Koil+St,+near+Bus+Stand,+Kanchipuram,+Tamil+Nadu+631502/@12.8410193,79.7004432" target="_blank" class="text-decoration-none">
+                <p class="mb-0"><i class="bi bi-geo-alt me-2"></i>
+                <span class="text-dark">No. 13, Sangupani Vinayagar Kovil Street,Near Bus Stand, Kanchipuram, TN 631502.</span>
+                <br><small>Get Directions</small><i class="bi bi-box-arrow-up-right ms-1"></i></p>
+            </a></p>
+
             <p class="d-none"><strong>GSTIN:</strong> Nil</p>
             <p><strong>Since:</strong> 2024</p>
             <p><i class="bi bi-telephone"></i><strong>Mobile :</strong> <a href="tel:+919080442303" class="ms-2 text-decoration-none">+919080442303</a></p>
@@ -820,6 +878,13 @@
                   </button>
                 </div>
 
+                    <!-- Security Note -->
+                    <div class="secure-note text-center small text-secondary text-opacity-50 mt-2">
+                      <i class="bi bi-lock-fill"></i>
+                      <span>Your data is protected by reCAPTCHA <a class="small" href="https://policies.google.com/privacy" target="_blank">Privacy</a> ·
+                        <a class="small" href="https://policies.google.com/terms" target="_blank">Terms</a></span>
+                    </div>
+
               </div>
             </form>
 
@@ -831,6 +896,7 @@
   </div>
 </section>
 
+<script src="https://www.google.com/recaptcha/api.js?render=6Led3dQsAAAAAJ3gbHohRpri-isc6Y8LcG1RwI4H"></script>
 <script>
 const form = document.getElementById("clinicForm");
 const alertBox = document.getElementById("formAlert");
@@ -845,7 +911,17 @@ dateInput.setAttribute("min", today);
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
 
-  const data = Object.fromEntries(new FormData(form));
+  //const data = Object.fromEntries(new FormData(form));
+   //<-- ADD THIS (closes grecaptcha.ready)
+   grecaptcha.ready(async function () {
+  const token = await grecaptcha.execute("6Led3dQsAAAAAJ3gbHohRpri-isc6Y8LcG1RwI4H", { action: "submit" });
+
+  const data = {
+    ...Object.fromEntries(new FormData(form)),
+    token: token,
+    site: window.location.hostname
+  };
+  //
 
   try {
     const res = await fetch("https://silent-hall-cc73.chentamil1988.workers.dev", {
@@ -880,8 +956,15 @@ form.addEventListener("submit", async (e) => {
     alert("❌ Error sending message");
     console.error(err);
   }
+  }); // <-- ADD THIS (closes grecaptcha.ready)
 });
 </script>
+
+<style>
+.grecaptcha-badge {
+  visibility: hidden !important;
+}
+</style>
 
   </main>
 
@@ -906,7 +989,7 @@ form.addEventListener("submit", async (e) => {
             </div>
             <div class="col-md-3 mb-3">
                 <h5 class="text-warning">Contact</h5>
-                <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3910.252848312899!2d79.7062666!3d12.8378595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52c3e547020743%3A0xbc10c415b877c2d1!2sJothi%20Heart%20%26%20Skin%20Clinic!5e0!3m2!1sen!2sin!4v1697839999999!5m2!1sen!2sin" 
+                <a href="https://www.google.com/maps/dir//Jothi+Heart+%26+Skin+Clinic,+13,+Sangupani+Vinayagar+Koil+St,+near+Bus+Stand,+Kanchipuram,+Tamil+Nadu+631502/@12.8410193,79.7004432" 
    target="_blank" 
    class="text-white text-decoration-none">
   <p class="mb-0"><i class="bi bi-geo-alt me-2"></i>No. 13, Sangupani Vinayagar Kovil Street,Near Bus Stand, Kanchipuram, TN 631502 <i class="bi bi-box-arrow-up-right ms-1"></i></p>
