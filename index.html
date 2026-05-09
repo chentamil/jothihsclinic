@@ -213,7 +213,7 @@
                   <li class="nav-item"><a class="nav-link" href="/#services">Services</a></li>
                   <li class="nav-item"><a class="nav-link" href="/#treatments">Treatments</a></li>
                   <li class="nav-item"><a class="nav-link" href="/#doctors">Doctors</a></li>
-                  <li class="nav-item"><a class="nav-link" href="/#pricing">Rate Card</a></li>
+                  <!-- <li class="nav-item"><a class="nav-link" href="/#pricing">Rate Card</a></li> -->
                   <li class="nav-item"><a class="nav-link" href="/#contact">Location</a></li>
                 </ul>
                 <a href="pages/appointment" class="fs-6 btn btn-sm btn-custom text-center text-white">Book Appointment</a>
@@ -289,7 +289,7 @@
         <div class="banner-content">
           <h2>Complete Heart & Skin Care Under One Roof</h2>
           <p>Advanced Treatment, Trusted Doctors</p>
-          <a href="#" class="btn btn-primary">Book Consultation</a>
+          <a href="/pages/appointment/" class="btn btn-primary">Book Consultation</a>
         </div>
       </div>
 
@@ -299,7 +299,7 @@
         <div class="banner-content">
           <h2>Caring for Your Heart. Enhancing Your Skin.</h2>
           <p>"Radiant Skin and Resilient Heart"</p>
-          <a href="#" class="btn btn-danger">Visit Clinic</a>
+          <a href="#contact" class="btn btn-danger">Visit Clinic</a>
         </div>
       </div>
 
@@ -309,7 +309,7 @@
         <div class="banner-content">
           <h2>Skin That Feels as Good as It Looks</h2>
           <p>Personalized Dermatology Care</p>
-          <a href="#" class="btn btn-success">Learn More</a>
+          <a href="/pages/photo-gallery/" class="btn btn-success">Learn More</a>
         </div>
       </div>
 
@@ -551,11 +551,6 @@
   </a>
 </div>
 
-<div class="col-md-3">
-  <a href="/pages/acne-treatment" class="text-decoration-none text-black">
-    <div class="card p-3 cus-blue-bg fw-bold">Acne Treatment</div>
-  </a>
-</div>
 
 </div>
 </div>
@@ -613,7 +608,7 @@
         <div class="doctor-box d-flex align-items-center">
 
           <div class="doctor-left">
-            <img src="https://i.ibb.co/wZ2J1g69/Dr-D-Suresh.jpg" alt="Doctor">
+            <img src="https://cdn.jsdelivr.net/gh/chentamil/jothihsclinic@main/images/small-images/dr-sivayogana.webp" alt="Doctor Sivayogana">
           </div>
 
           <div class="doctor-right">
@@ -725,10 +720,50 @@
         </div>
         
 
+         <div class="carousel-indicators">
+          
+            <button type="button"
+              data-bs-target="#testimonialCarousel"
+              data-bs-slide-to="0"
+              class="active"
+              aria-label="Slide 1"></button>
+          
+            <button type="button"
+              data-bs-target="#testimonialCarousel"
+              data-bs-slide-to="1"
+              class=""
+              aria-label="Slide 2"></button>
+          
+            <button type="button"
+              data-bs-target="#testimonialCarousel"
+              data-bs-slide-to="2"
+              class=""
+              aria-label="Slide 3"></button>
+          
+        </div>
+
       </div>
     </div>
   </div>
 </section>
+
+<style>
+    #testimonialCarousel .carousel-indicators [data-bs-target]{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #999;
+    opacity: 0.5;
+    margin: 0 4px;
+}
+
+#testimonialCarousel .carousel-indicators .active{
+    background-color: #000; 
+    opacity: 1;
+    width: 7px;
+    height: 7px;
+}
+</style>
 <section class="py-5 bg-light">
   <div class="container">
             <div class="text-center">
@@ -786,7 +821,7 @@
     <!-- CONTACT -->
     <section id="contact" class="text-center border border-warning border-2 rounded-3 m-4">
         <div class="container">
-            <h2>Visit Our Clinic</h2>
+            <h2>Visit Us</h2>
             <h3><strong> Jothi Heart & Skin Clinic </strong></h3>
             <p><a href="https://www.google.com/maps/dir//Jothi+Heart+%26+Skin+Clinic,+13,+Sangupani+Vinayagar+Koil+St,+near+Bus+Stand,+Kanchipuram,+Tamil+Nadu+631502/@12.8410193,79.7004432" target="_blank" class="text-decoration-none">
                 <p class="mb-0"><i class="bi bi-geo-alt me-2"></i>
