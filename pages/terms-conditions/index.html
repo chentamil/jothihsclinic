@@ -20,8 +20,6 @@
     <!-- Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <!-- Custom CSS -->
-    <!-- <link href="https://cdn.jsdelivr.net/gh/chentamil/jothihsclinic@main/style1.css" rel="stylesheet"> -->
-    <!-- <link href="https://cdn.jsdelivr.net/gh/chentamil/sdjewellers@main/style.css" rel="stylesheet"> -->
     <link href="https://cdn.jsdelivr.net/gh/chentamil/jothihsclinic@main/css/style.css" rel="stylesheet">
     <!-- Favicon -->
     <!-- <link rel="icon" href="https://cdn.jsdelivr.net/gh/chentamil/jothihsclinic@main/images/sdj-logo.jpg" type="image/jpeg"> -->
@@ -31,26 +29,16 @@
 
 <!-- SEO SCHEMA -->
 
-    <!-- Changes in SEO SCHEMA :
-    1.Website URL "url": "https://jothiheartandskin.com/"
-    2."email": "ssdermcardio@gmail.com"
-    3.Social Media:
-    "sameAs": [
-    "https://www.facebook.com/jothiheartandskinclinic",
-    "https://www.instagram.com/jothiheartandskinclinic",
-    "https://www.youtube.com/@jothiheartandskinclinic"
-    ]
-    4.Reviews with actual reviews -->
     <script type="application/ld+json">
     {
     "@context": "https://schema.org",
-    "@type": "Hospital",
+    "@type": "MedicalClinic",
 
     "name": "Jothi Heart & Skin Clinic",
     "url": "https://jothiheartandskin.com/",
     "priceRange": "₹300 - ₹5000",
 
-    "image": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2",
+    "image": "https://cdn.jsdelivr.net/gh/chentamil/jothihsclinic@main/images/jothiheartandskin-1.jpeg",
 
     "description": "Jothi Heart & Skin Clinic is a modern dual-specialty clinic in Kanchipuram offering expert cardiology and advanced dermatology & aesthetic treatments including ECG, Echo, PRP, Laser, HydraFacial, and more.",
 
@@ -93,7 +81,7 @@
     "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.8",
-        "reviewCount": "114"
+        "reviewCount": "200"
     },
 
     "review": [
@@ -101,13 +89,13 @@
         "@type": "Review",
         "author": { "@type": "Person", "name": "Patient" },
         "datePublished": "2026-01-10",
-        "reviewBody": "Very professional doctor. Clear diagnosis and excellent care."
+        "reviewBody": "Very professional doctor,Dr.Suresh is best cardiologist in kanchipuram. Clear diagnosis and excellent care."
         },
         {
         "@type": "Review",
         "author": { "@type": "Person", "name": "Patient" },
         "datePublished": "2026-01-08",
-        "reviewBody": "Skin treatment results were amazing. Highly recommended clinic."
+        "reviewBody": "Skin treatment results were amazing. Highly recommended clinic.Dr.Suresh is best Dermatologist in kanchipuram."
         }
     ],
 
@@ -117,10 +105,12 @@
         "name": "Cardiology",
         "availableService": [
             { "@type": "MedicalProcedure", "name": "Consultation" },
-            { "@type": "MedicalProcedure", "name": "ECG" },
-            { "@type": "MedicalProcedure", "name": "Echocardiogram" },
-            { "@type": "MedicalProcedure", "name": "TMT Stress Test" },
-            { "@type": "MedicalProcedure", "name": "Holter Monitoring" },
+            { "@type": "MedicalTest", "name": "ECG" },
+            { "@type": "MedicalTest", "name": "Echocardiogram" },
+            { "@type": "MedicalTest", "name": "TMT Treadmill  Stress Test" },
+            { "@type": "MedicalTest", "name": "Holter Monitoring" },
+            { "@type": "MedicalTest", "name": "ABPM - Blood Pressure Monitoring" },
+            { "@type": "MedicalTest", "name": "CGM - Continuous Glucose Monitoring" },
             { "@type": "MedicalProcedure", "name": "Angiography" },
             { "@type": "MedicalProcedure", "name": "Angioplasty" }
         ]

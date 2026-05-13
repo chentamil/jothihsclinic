@@ -20,8 +20,6 @@
     <!-- Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <!-- Custom CSS -->
-    <!-- <link href="https://cdn.jsdelivr.net/gh/chentamil/jothihsclinic@main/style1.css" rel="stylesheet"> -->
-    <!-- <link href="https://cdn.jsdelivr.net/gh/chentamil/sdjewellers@main/style.css" rel="stylesheet"> -->
     <link href="https://cdn.jsdelivr.net/gh/chentamil/jothihsclinic@main/css/style.css" rel="stylesheet">
     <!-- Favicon -->
     <!-- <link rel="icon" href="https://cdn.jsdelivr.net/gh/chentamil/jothihsclinic@main/images/sdj-logo.jpg" type="image/jpeg"> -->
@@ -31,26 +29,16 @@
 
 <!-- SEO SCHEMA -->
 
-    <!-- Changes in SEO SCHEMA :
-    1.Website URL "url": "https://jothiheartandskin.com/"
-    2."email": "ssdermcardio@gmail.com"
-    3.Social Media:
-    "sameAs": [
-    "https://www.facebook.com/jothiheartandskinclinic",
-    "https://www.instagram.com/jothiheartandskinclinic",
-    "https://www.youtube.com/@jothiheartandskinclinic"
-    ]
-    4.Reviews with actual reviews -->
     <script type="application/ld+json">
     {
     "@context": "https://schema.org",
-    "@type": "Hospital",
+    "@type": "MedicalClinic",
 
     "name": "Jothi Heart & Skin Clinic",
     "url": "https://jothiheartandskin.com/",
     "priceRange": "₹300 - ₹5000",
 
-    "image": "https://images.unsplash.com/photo-1559839734-2b71ea197ec2",
+    "image": "https://cdn.jsdelivr.net/gh/chentamil/jothihsclinic@main/images/jothiheartandskin-1.jpeg",
 
     "description": "Jothi Heart & Skin Clinic is a modern dual-specialty clinic in Kanchipuram offering expert cardiology and advanced dermatology & aesthetic treatments including ECG, Echo, PRP, Laser, HydraFacial, and more.",
 
@@ -93,7 +81,7 @@
     "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "4.8",
-        "reviewCount": "114"
+        "reviewCount": "200"
     },
 
     "review": [
@@ -101,13 +89,13 @@
         "@type": "Review",
         "author": { "@type": "Person", "name": "Patient" },
         "datePublished": "2026-01-10",
-        "reviewBody": "Very professional doctor. Clear diagnosis and excellent care."
+        "reviewBody": "Very professional doctor,Dr.Suresh is best cardiologist in kanchipuram. Clear diagnosis and excellent care."
         },
         {
         "@type": "Review",
         "author": { "@type": "Person", "name": "Patient" },
         "datePublished": "2026-01-08",
-        "reviewBody": "Skin treatment results were amazing. Highly recommended clinic."
+        "reviewBody": "Skin treatment results were amazing. Highly recommended clinic.Dr.Suresh is best Dermatologist in kanchipuram."
         }
     ],
 
@@ -117,10 +105,12 @@
         "name": "Cardiology",
         "availableService": [
             { "@type": "MedicalProcedure", "name": "Consultation" },
-            { "@type": "MedicalProcedure", "name": "ECG" },
-            { "@type": "MedicalProcedure", "name": "Echocardiogram" },
-            { "@type": "MedicalProcedure", "name": "TMT Stress Test" },
-            { "@type": "MedicalProcedure", "name": "Holter Monitoring" },
+            { "@type": "MedicalTest", "name": "ECG" },
+            { "@type": "MedicalTest", "name": "Echocardiogram" },
+            { "@type": "MedicalTest", "name": "TMT Treadmill  Stress Test" },
+            { "@type": "MedicalTest", "name": "Holter Monitoring" },
+            { "@type": "MedicalTest", "name": "ABPM - Blood Pressure Monitoring" },
+            { "@type": "MedicalTest", "name": "CGM - Continuous Glucose Monitoring" },
             { "@type": "MedicalProcedure", "name": "Angiography" },
             { "@type": "MedicalProcedure", "name": "Angioplasty" }
         ]
@@ -295,7 +285,210 @@
 </section>
 </div>
 </main>
+<!-- TREATMENTS GRID -->
+<section id="treatments" class="py-5" style="background: #cff4fc;">
+<div class="container text-center">
 
+<h2>All Treatments</h2>
+<p>Comprehensive care, every visit.</p>
+
+<div class="row g-4">
+
+<div class="col-md-3">
+  <a href="/pages/cardiology-consultation" class="text-decoration-none text-black">
+    <div class="card p-3 cus-blue-bg fw-bold">Cardiology Consultation</div>
+  </a>
+</div>
+
+<div class="col-md-3">
+  <a href="/pages/ecg" class="text-decoration-none text-black">
+    <div class="card p-3 cus-blue-bg fw-bold">ECG</div>
+  </a>
+</div>
+
+<div class="col-md-3">
+  <a href="/pages/echocardiogram" class="text-decoration-none text-black">
+    <div class="card p-3 cus-blue-bg fw-bold">ECHO</div>
+  </a>
+</div>
+
+<div class="col-md-3">
+  <a href="/pages/treadmill-test" class="text-decoration-none text-black">
+    <div class="card p-3 cus-blue-bg fw-bold">TMT Stress Test</div>
+  </a>
+</div>
+
+<div class="col-md-3">
+  <a href="/pages/holter-monitoring" class="text-decoration-none text-black">
+    <div class="card p-3 cus-blue-bg fw-bold">Holter Monitoring</div>
+  </a>
+</div>
+
+<div class="col-md-3">
+  <a href="/pages/coronary-angioplasty" class="text-decoration-none text-black">
+    <div class="card p-3 cus-blue-bg fw-bold">Angioplasty</div>
+  </a>
+</div>
+
+<div class="col-md-3">
+  <a href="/pages/laser-hair-removal" class="text-decoration-none text-black">
+    <div class="card p-3 cus-blue-bg fw-bold">Laser Hair Removal</div>
+  </a>
+</div>
+
+<div class="col-md-3">
+  <a href="/pages/prp-hair-treatment" class="text-decoration-none text-black">
+    <div class="card p-3 cus-blue-bg fw-bold">PRP & GFC</div>
+  </a>
+</div>
+
+<div class="col-md-3">
+  <a href="/pages/hydrafacial" class="text-decoration-none text-black">
+    <div class="card p-3 cus-blue-bg fw-bold">HydraFacial</div>
+  </a>
+</div>
+
+<div class="col-md-3">
+  <a href="/pages/pico-laser-carbon-peel" class="text-decoration-none text-black">
+    <div class="card p-3 cus-blue-bg fw-bold">Pico Laser</div>
+  </a>
+</div>
+
+<div class="col-md-3">
+  <a href="/pages/microneedling" class="text-decoration-none text-black">
+    <div class="card p-3 cus-blue-bg fw-bold">Microneedling</div>
+  </a>
+</div>
+
+<div class="col-md-3">
+  <a href="/pages/chemical-peeling" class="text-decoration-none text-black">
+    <div class="card p-3 cus-blue-bg fw-bold">Chemical Peel</div>
+  </a>
+</div>
+
+<div class="col-md-3">
+  <a href="/pages/tattoo-mole-removal" class="text-decoration-none text-black">
+    <div class="card p-3 cus-blue-bg fw-bold">Tattoo Removal</div>
+  </a>
+</div>
+
+
+</div>
+</div>
+</section>
+
+<style>
+  .card:hover {
+  transform: scale(1.03);
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.cus-blue-bg {
+    background: linear-gradient(135deg, #007CC1 0%, #07488E 100%);
+    color: #fff;
+}
+</style>
+<!-- SEO Keywords Section -->
+<section class="py-5 bg-light" id="seo-keywords">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-11">
+
+                <div class="bg-white shadow-sm rounded-4 p-4 p-md-5">
+
+                    <h2 class="fw-bold text-center mb-4">
+                        Best Cardiologist & Dermatologist in Kanchipuram
+                    </h2>
+
+                    <p class="lead text-muted text-center mb-5">
+                        Jothi Heart & Skin Clinic is one of the trusted heart, skin, and hair care clinics in Kanchipuram offering advanced cardiology, dermatology, cosmetic skin treatments, and hair restoration services near Kanchipuram Bus Stand, Tamil Nadu 631502.
+                    </p>
+
+                    <div class="row g-4">
+
+                        <!-- Cardiology -->
+                        <div class="col-md-6">
+                            <div class="border rounded-4 p-4 h-100">
+                                <h3 class="h4 fw-bold mb-3 text-danger">
+                                    Best Cardiologist in Kanchipuram
+                                </h3>
+
+                                <p class="mb-3">
+                                    Looking for an experienced cardiologist in Kanchipuram near bus stand? 
+                                    Jothi Heart & Skin Clinic provides advanced cardiac evaluation and heart care services for patients across Kanchipuram and nearby areas.
+                                </p>
+
+                                <ul class="list-unstyled">
+                                    <li class="mb-2">✔ Cardiology Consultation in Kanchipuram</li>
+                                    <li class="mb-2">✔ ECG Test Near Me</li>
+                                    <li class="mb-2">✔ Echocardiogram (ECHO) Scan</li>
+                                    <li class="mb-2">✔ TMT Stress Test</li>
+                                    <li class="mb-2">✔ Holter Monitoring</li>
+                                    <li class="mb-2">✔ ABPM Blood Pressure Monitoring</li>
+                                    <li class="mb-2">✔ CGM Diabetes Monitoring</li>
+                                    <li class="mb-2">✔ Coronary Angiography</li>
+                                    <li class="mb-2">✔ Coronary Angioplasty Specialist</li>
+                                </ul>
+
+                                <p class="small text-muted mb-0">
+                                    Serving patients from Kanchipuram, Enathur, Walajabad, Orikkai, Ayyangarkulam, and nearby locations.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Dermatology -->
+                        <div class="col-md-6">
+                            <div class="border rounded-4 p-4 h-100">
+                                <h3 class="h4 fw-bold mb-3 text-primary">
+                                    Best Dermatologist in Kanchipuram
+                                </h3>
+
+                                <p class="mb-3">
+                                    Searching for a skin specialist or dermatologist in Kanchipuram? 
+                                    Our clinic offers advanced skin care, cosmetic dermatology, laser procedures, and hair loss treatments using modern technology.
+                                </p>
+
+                                <ul class="list-unstyled">
+                                    <li class="mb-2">✔ Acne & Scar Removal Treatment</li>
+                                    <li class="mb-2">✔ Hair Loss & Hair Thinning Treatment</li>
+                                    <li class="mb-2">✔ PRP Hair Treatment</li>
+                                    <li class="mb-2">✔ GFC Hair Therapy</li>
+                                    <li class="mb-2">✔ Laser Hair Removal</li>
+                                    <li class="mb-2">✔ Pico Laser Treatment</li>
+                                    <li class="mb-2">✔ Carbon Peel / Hollywood Peel</li>
+                                    <li class="mb-2">✔ HydraFacial Treatment</li>
+                                    <li class="mb-2">✔ Botox Treatment</li>
+                                    <li class="mb-2">✔ Microneedling</li>
+                                    <li class="mb-2">✔ Chemical Peeling</li>
+                                    <li class="mb-2">✔ Tattoo & Mole Removal</li>
+                                </ul>
+
+                                <p class="small text-muted mb-0">
+                                    Popular skin and hair clinic near Kanchipuram Bus Stand and surrounding areas in Tamil Nadu 631502.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- SEO Paragraph -->
+                    <div class="mt-5">
+                        <p class="mb-3">
+                            Jothi Heart & Skin Clinic is a modern dual-specialty clinic in Kanchipuram providing expert heart care, dermatology, aesthetics, laser treatments, and hair restoration services under one roof. Patients searching for the best cardiologist near me, best dermatologist near me, skin clinic in Kanchipuram, PRP treatment near me, laser hair removal clinic, or heart specialist in Kanchipuram can visit our clinic conveniently located near Kanchipuram Bus Stand.
+                        </p>
+
+                        <p class="mb-0">
+                            Our specialists focus on personalized treatment, accurate diagnosis, advanced medical technology, and patient-centered care for cardiac conditions, skin disorders, cosmetic concerns, and hair loss treatments in Kanchipuram, Tamil Nadu.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
   </main>
 
    <!-- FOOTER -->
