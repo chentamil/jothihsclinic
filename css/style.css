@@ -404,3 +404,594 @@ footer a:hover {
   object-fit: cover;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==================================================
+   JOTHI HEART & SKIN CLINIC
+   Professional Design System
+   Bootstrap 5.2.3 compatible 
+   26-10-2026
+================================================== */
+
+:root {
+  --clinic-navy: #123454;
+  --clinic-blue: #176B91;
+  --clinic-teal: #149D98;
+  --clinic-teal-dark: #087D79;
+  --clinic-text: #34495E;
+  --clinic-muted: #687B8D;
+  --clinic-background: #F4F8FB;
+  --clinic-white: #FFFFFF;
+  --clinic-border: #E1EAF0;
+
+  --clinic-radius: 16px;
+  --clinic-shadow:
+    0 8px 28px rgba(18, 52, 84, 0.08);
+
+  --clinic-shadow-hover:
+    0 14px 36px rgba(18, 52, 84, 0.14);
+}
+
+/* Base */
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+body {
+  margin: 0;
+  color: var(--clinic-text);
+  background: var(--clinic-white);
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  transition: color 0.2s ease;
+}
+
+section {
+  scroll-margin-top: 85px;
+}
+
+/* Typography */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--clinic-navy);
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.025em;
+}
+
+h2 {
+  margin-bottom: 16px;
+  font-size: clamp(1.65rem, 3vw, 2.35rem);
+}
+
+h3 {
+  font-size: clamp(1.15rem, 2vw, 1.45rem);
+}
+
+p {
+  color: var(--clinic-text);
+}
+
+.text-muted {
+  color: var(--clinic-muted) !important;
+}
+
+/* Navigation */
+
+.navbar.fixed-top {
+  background: rgba(255, 255, 255, 0.97);
+  border-bottom: 1px solid var(--clinic-border);
+  box-shadow: 0 3px 18px rgba(18, 52, 84, 0.06);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.navbar .navbar-brand {
+  display: flex;
+  align-items: center;
+  color: var(--clinic-navy);
+  font-size: 0.98rem;
+  letter-spacing: -0.02em;
+}
+
+.navbar .navbar-brand img {
+  width: 46px !important;
+  height: 46px !important;
+  border-radius: 10px !important;
+}
+
+.navbar .brand-text {
+  color: var(--clinic-navy);
+}
+
+.navbar .nav-link {
+  position: relative;
+  padding: 12px 14px !important;
+  color: var(--clinic-navy) !important;
+  font-size: 0.88rem;
+  font-weight: 500;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: var(--clinic-teal-dark) !important;
+}
+
+.navbar .navbar-toggler {
+  border-color: var(--clinic-border);
+}
+
+.navbar .navbar-toggler:focus {
+  box-shadow: 0 0 0 3px rgba(20, 157, 152, 0.16);
+}
+
+.offcanvas {
+  background: var(--clinic-white);
+}
+
+.offcanvas .offcanvas-title {
+  color: var(--clinic-navy) !important;
+}
+
+/* Consistent buttons */
+
+.btn-custom,
+.btn-primary,
+.appointment-submit {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  padding: 11px 22px;
+  color: var(--clinic-white);
+  background: var(--clinic-blue);
+  font-weight: 600;
+  box-shadow: none;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.btn-custom:hover,
+.btn-primary:hover,
+.appointment-submit:hover {
+  color: var(--clinic-white);
+  background: var(--clinic-teal-dark);
+  border-color: transparent;
+  transform: translateY(-1px);
+  box-shadow: 0 7px 18px rgba(20, 157, 152, 0.18);
+}
+
+.btn-danger {
+  background: var(--clinic-blue);
+  border-color: var(--clinic-blue);
+}
+
+.btn-success {
+  background: var(--clinic-teal-dark);
+  border-color: var(--clinic-teal-dark);
+}
+
+/* Section backgrounds */
+
+#about {
+  padding: 72px 0;
+  color: var(--clinic-white) !important;
+  background: var(--clinic-navy) !important;
+}
+
+#about h2,
+#about p {
+  color: var(--clinic-white);
+}
+
+#about .lead {
+  max-width: 760px;
+  margin: 20px auto 0;
+  font-size: 1.08rem;
+  line-height: 1.9;
+}
+
+#services,
+#treatments,
+#doctors {
+  padding-top: 76px;
+  padding-bottom: 76px;
+}
+
+#services {
+  background: var(--clinic-white);
+}
+
+#services h4 {
+  margin-bottom: 18px;
+  color: var(--clinic-blue);
+}
+
+#services ul {
+  padding-left: 20px;
+}
+
+#services li {
+  padding: 5px 0;
+}
+
+/* Treatment cards */
+
+.treatments-section {
+  background: var(--clinic-background);
+}
+
+.treatment-card {
+  height: 100%;
+  overflow: hidden;
+  background: var(--clinic-white);
+  border: 1px solid var(--clinic-border);
+  border-radius: var(--clinic-radius);
+  box-shadow: var(--clinic-shadow);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.treatment-card-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.treatment-card-link:hover .treatment-card,
+.treatment-card-link:focus-visible .treatment-card {
+  border-color: #9BD9D5;
+  box-shadow: var(--clinic-shadow-hover);
+  transform: translateY(-4px);
+}
+
+.treatment-image {
+  overflow: hidden;
+  background: #EAF3F8;
+}
+
+.treatment-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.35s ease;
+}
+
+.treatment-card-link:hover .treatment-image img {
+  transform: scale(1.035);
+}
+
+.treatment-card-body {
+  padding: 20px;
+}
+
+.treatment-card-body h3 {
+  color: var(--clinic-navy);
+  font-size: 1.05rem;
+}
+
+.treatment-card-body p {
+  color: var(--clinic-muted);
+  font-size: 0.88rem;
+  line-height: 1.75;
+}
+
+.treatment-link {
+  color: var(--clinic-blue);
+  font-weight: 600;
+}
+
+.treatment-card-link:focus-visible {
+  outline: 3px solid var(--clinic-teal);
+  outline-offset: 4px;
+  border-radius: var(--clinic-radius);
+}
+
+/* Doctor profiles */
+
+.doctor-section {
+  background: #F7FAFC;
+}
+
+.doctor-box {
+  height: 100%;
+  padding: 24px;
+  background: var(--clinic-white);
+  border: 1px solid var(--clinic-border);
+  border-radius: var(--clinic-radius);
+  box-shadow: var(--clinic-shadow);
+  transition: box-shadow 0.2s ease;
+}
+
+.doctor-box:hover {
+  box-shadow: var(--clinic-shadow-hover);
+}
+
+.doctor-left img {
+  display: block;
+  max-width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.doctor-right h3 {
+  margin-bottom: 8px;
+  color: var(--clinic-navy);
+}
+
+.doctor-right h5 {
+  color: var(--clinic-blue);
+  font-size: 0.88rem;
+  line-height: 1.7;
+}
+
+.doctor-right p {
+  color: var(--clinic-muted);
+  font-size: 0.9rem;
+}
+
+.doctor-right a:not(.btn) {
+  color: var(--clinic-blue);
+  font-weight: 600;
+}
+
+/* Ratings and testimonials */
+
+#ratingspecs {
+  color: var(--clinic-white);
+  background-attachment: scroll !important;
+}
+
+#ratingspecs h3,
+#ratingspecs p {
+  color: inherit;
+}
+
+#testimonialCarousel .card {
+  border: 1px solid var(--clinic-border);
+  border-radius: var(--clinic-radius);
+  box-shadow: var(--clinic-shadow);
+}
+
+#testimonialCarousel .card p {
+  line-height: 1.85;
+}
+
+/* FAQs */
+
+.accordion-item {
+  margin-bottom: 10px;
+  overflow: hidden;
+  border: 1px solid var(--clinic-border) !important;
+  border-radius: 12px !important;
+}
+
+.accordion-button {
+  padding: 18px 20px;
+  color: var(--clinic-navy);
+  background: var(--clinic-white);
+  font-weight: 600;
+}
+
+.accordion-button:not(.collapsed) {
+  color: var(--clinic-blue);
+  background: #EDF7FA;
+  box-shadow: none;
+}
+
+.accordion-button:focus {
+  box-shadow: 0 0 0 3px rgba(20, 157, 152, 0.14);
+}
+
+.accordion-body {
+  color: var(--clinic-muted);
+  line-height: 1.8;
+}
+
+/* SEO content */
+
+#seo-keywords {
+  background: var(--clinic-background) !important;
+}
+
+#seo-keywords .bg-white {
+  border: 1px solid var(--clinic-border);
+  box-shadow: var(--clinic-shadow) !important;
+}
+
+#seo-keywords h2,
+#seo-keywords h3 {
+  color: var(--clinic-navy);
+}
+
+#seo-keywords p,
+#seo-keywords li {
+  line-height: 1.85;
+}
+
+/* Contact */
+
+#contact {
+  margin: 48px auto !important;
+  max-width: 1100px;
+  padding: 40px 16px;
+  background: var(--clinic-white);
+  border: 1px solid var(--clinic-border) !important;
+  border-radius: var(--clinic-radius) !important;
+}
+
+#contact a {
+  color: var(--clinic-blue);
+}
+
+#contact p {
+  line-height: 1.9;
+}
+
+/* Appointment form */
+
+.appointment-section {
+  background: var(--clinic-background);
+}
+
+.appointment-card {
+  border: 1px solid var(--clinic-border);
+  border-radius: 20px;
+  box-shadow: var(--clinic-shadow);
+}
+
+.appointment-header {
+  background: var(--clinic-navy);
+}
+
+.appointment-submit {
+  background: var(--clinic-teal-dark);
+}
+
+.clinic-input .form-control:focus,
+.clinic-input .form-select:focus,
+.clinic-textarea:focus {
+  border-color: var(--clinic-teal);
+  box-shadow: 0 0 0 3px rgba(20, 157, 152, 0.13);
+}
+
+/* Footer */
+
+footer {
+  background: #102B45;
+}
+
+footer h5,
+footer .text-warning {
+  color: #80DAD3 !important;
+}
+
+footer p,
+footer li,
+footer .text-secondary {
+  color: #D2DEE8 !important;
+}
+
+footer a {
+  transition: color 0.2s ease;
+}
+
+footer a:hover {
+  color: #80DAD3 !important;
+}
+
+footer ul {
+  padding-left: 18px;
+}
+
+footer li {
+  margin-bottom: 7px;
+}
+
+/* Floating action buttons */
+
+#backToTop {
+  position: fixed;
+  right: 24px;
+  bottom: 88px;
+  z-index: 1030;
+  display: none;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+}
+
+#backToTop.show {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive adjustments */
+
+@media (max-width: 767.98px) {
+  #about {
+    padding: 52px 0;
+  }
+
+  #services,
+  #treatments,
+  #doctors {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .doctor-box {
+    gap: 16px;
+  }
+
+  #contact {
+    margin: 24px 12px !important;
+    padding: 30px 12px;
+  }
+
+  footer {
+    font-size: 0.88rem;
+  }
+}
+
+/* Respect reduced-motion preferences */
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+
+
+
+
+
+
+
+
+

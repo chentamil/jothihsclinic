@@ -103,8 +103,8 @@
 
     "aggregateRating": {
         "@type": "AggregateRating",
-        "ratingValue": "4.8",
-        "reviewCount": "200"
+        "ratingValue": "4.9",
+        "reviewCount": "250"
     },
 
     "review": [
@@ -273,110 +273,142 @@
 
   <main>
     
+<!-- PhotoSwipe v5 -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/photoswipe@5/dist/photoswipe.css"
+>
 
-
-<!-- PAGE CONTENT -->
-<section class="py-4">
+<!-- CLINIC PHOTO GALLERY -->
+<section class="jothi-gallery-section py-5 mt-4">
   <div class="container">
 
-    <div class="text-center mb-4">
+    <header class="text-center mb-4">
       <h2 class="fw-bold mb-2">Photo Gallery</h2>
       <p class="text-muted mb-0">
         A glimpse of our clinic, facilities and services.
       </p>
-    </div>
+    </header>
 
-    <div class="row g-3">
+    <div class="row g-3" id="jothi-gallery">
 
+      <!-- Image 1 -->
       <div class="col-6 col-md-4 col-lg-3">
-        <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100">
-          <a href="https://www.jothiheartandskin.com/images/clinic-photos/derm.png"
-             target="_blank">
-            <img src="https://www.jothiheartandskin.com/images/clinic-photos/derm.png"
-                 alt="Dermatology treatment at Jothi Heart and Skin Clinic"
-                 class="img-fluid w-100 gallery-img"
-                 loading="lazy"
-                 decoding="async">
-          </a>
-        </div>
+        <a
+          class="jothi-gallery-item"
+          href="https://www.jothiheartandskin.com/images/clinic-photos/derm.png"
+          aria-label="View dermatology treatment image"
+        >
+          <img
+            src="https://www.jothiheartandskin.com/images/clinic-photos/derm.png"
+            alt="Dermatology treatment at Jothi Heart and Skin Clinic"
+            class="jothi-gallery-img"
+            loading="lazy"
+            decoding="async"
+          >
+        </a>
       </div>
 
+      <!-- Image 2 -->
       <div class="col-6 col-md-4 col-lg-3">
-        <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100">
-          <a href="https://www.jothiheartandskin.com/images/clinic-photos/ecg.jpeg"
-             target="_blank">
-            <img src="https://www.jothiheartandskin.com/images/clinic-photos/ecg.jpeg"
-                 alt="ECG facility at Jothi Heart and Skin Clinic"
-                 class="img-fluid w-100 gallery-img"
-                 loading="lazy"
-                 decoding="async">
-          </a>
-        </div>
+        <a
+          class="jothi-gallery-item"
+          href="https://www.jothiheartandskin.com/images/clinic-photos/ecg.jpeg"
+          aria-label="View ECG facility image"
+        >
+          <img
+            src="https://www.jothiheartandskin.com/images/clinic-photos/ecg.jpeg"
+            alt="ECG facility at Jothi Heart and Skin Clinic"
+            class="jothi-gallery-img"
+            loading="lazy"
+            decoding="async"
+          >
+        </a>
       </div>
 
+      <!-- Image 3 -->
       <div class="col-6 col-md-4 col-lg-3">
-        <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100">
-          <a href="https://www.jothiheartandskin.com/images/clinic-photos/hydrafacial.png"
-             target="_blank">
-            <img src="https://www.jothiheartandskin.com/images/clinic-photos/hydrafacial.png"
-                 alt="Hydrafacial treatment at Jothi Heart and Skin Clinic"
-                 class="img-fluid w-100 gallery-img"
-                 loading="lazy"
-                 decoding="async">
-          </a>
-        </div>
+        <a
+          class="jothi-gallery-item"
+          href="https://www.jothiheartandskin.com/images/clinic-photos/hydrafacial.png"
+          aria-label="View HydraFacial treatment image"
+        >
+          <img
+            src="https://www.jothiheartandskin.com/images/clinic-photos/hydrafacial.png"
+            alt="HydraFacial treatment at Jothi Heart and Skin Clinic"
+            class="jothi-gallery-img"
+            loading="lazy"
+            decoding="async"
+          >
+        </a>
       </div>
 
+      <!-- Image 4 -->
       <div class="col-6 col-md-4 col-lg-3">
-        <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100">
-          <a href="https://www.jothiheartandskin.com/images/clinic-photos/jothi-view001.png"
-             target="_blank">
-            <img src="https://www.jothiheartandskin.com/images/clinic-photos/jothi-view001.png"
-                 alt="Jothi Heart and Skin Clinic"
-                 class="img-fluid w-100 gallery-img"
-                 loading="lazy"
-                 decoding="async">
-          </a>
-        </div>
+        <a
+          class="jothi-gallery-item"
+          href="https://www.jothiheartandskin.com/images/clinic-photos/jothi-view001.png"
+          aria-label="View Jothi Heart and Skin Clinic"
+        >
+          <img
+            src="https://www.jothiheartandskin.com/images/clinic-photos/jothi-view001.png"
+            alt="Jothi Heart and Skin Clinic"
+            class="jothi-gallery-img"
+            loading="lazy"
+            decoding="async"
+          >
+        </a>
       </div>
 
+      <!-- Image 5 -->
       <div class="col-6 col-md-4 col-lg-3">
-        <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100">
-          <a href="https://www.jothiheartandskin.com/images/clinic-photos/jothi-view002.png"
-             target="_blank">
-            <img src="https://www.jothiheartandskin.com/images/clinic-photos/jothi-view002.png"
-                 alt="Jothi Heart and Skin Clinic interior"
-                 class="img-fluid w-100 gallery-img"
-                 loading="lazy"
-                 decoding="async">
-          </a>
-        </div>
+        <a
+          class="jothi-gallery-item"
+          href="https://www.jothiheartandskin.com/images/clinic-photos/jothi-view002.png"
+          aria-label="View clinic interior"
+        >
+          <img
+            src="https://www.jothiheartandskin.com/images/clinic-photos/jothi-view002.png"
+            alt="Jothi Heart and Skin Clinic interior"
+            class="jothi-gallery-img"
+            loading="lazy"
+            decoding="async"
+          >
+        </a>
       </div>
 
+      <!-- Image 6 -->
       <div class="col-6 col-md-4 col-lg-3">
-        <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100">
-          <a href="https://www.jothiheartandskin.com/images/clinic-photos/siva-table.png"
-             target="_blank">
-            <img src="https://www.jothiheartandskin.com/images/clinic-photos/siva-table.png"
-                 alt="Dermatology consultation at Jothi Heart and Skin Clinic"
-                 class="img-fluid w-100 gallery-img"
-                 loading="lazy"
-                 decoding="async">
-          </a>
-        </div>
+        <a
+          class="jothi-gallery-item"
+          href="https://www.jothiheartandskin.com/images/clinic-photos/siva-table.png"
+          aria-label="View consultation image"
+        >
+          <img
+            src="https://www.jothiheartandskin.com/images/clinic-photos/siva-table.png"
+            alt="Dermatology consultation at Jothi Heart and Skin Clinic"
+            class="jothi-gallery-img"
+            loading="lazy"
+            decoding="async"
+          >
+        </a>
       </div>
 
+      <!-- Image 7 -->
       <div class="col-6 col-md-4 col-lg-3">
-        <div class="card border-0 shadow-sm rounded-4 overflow-hidden h-100">
-          <a href="https://www.jothiheartandskin.com/images/clinic-photos/suresh-table.png"
-             target="_blank">
-            <img src="https://www.jothiheartandskin.com/images/clinic-photos/suresh-table.png"
-                 alt="Cardiology consultation at Jothi Heart and Skin Clinic"
-                 class="img-fluid w-100 gallery-img"
-                 loading="lazy"
-                 decoding="async">
-          </a>
-        </div>
+        <a
+          class="jothi-gallery-item"
+          href="https://www.jothiheartandskin.com/images/clinic-photos/suresh-table.png"
+          aria-label="View cardiology consultation image"
+        >
+          <img
+            src="https://www.jothiheartandskin.com/images/clinic-photos/suresh-table.png"
+            alt="Cardiology consultation at Jothi Heart and Skin Clinic"
+            class="jothi-gallery-img"
+            loading="lazy"
+            decoding="async"
+          >
+        </a>
       </div>
 
     </div>
@@ -384,31 +416,163 @@
 </section>
 
 <style>
-  .gallery-img {
-    height: 220px;
-    object-fit: cover;
-    object-position: center;
-    transition: transform 0.3s ease;
-    cursor: pointer;
-  }
+/* =====================================
+   JOTHI GALLERY
+   Styles are isolated to this component.
+   ===================================== */
 
-  .card:hover .gallery-img {
-    transform: scale(1.04);
-  }
+.jothi-gallery-section .jothi-gallery-item {
+  display: block;
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #f5f7fa;
+  text-decoration: none;
+}
 
-  @media (max-width: 575.98px) {
-    .gallery-img {
-      height: 160px;
-    }
+.jothi-gallery-section .jothi-gallery-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transform: none;
+  transition: transform 300ms ease;
+  cursor: zoom-in;
+}
+
+.jothi-gallery-section .jothi-gallery-item:hover
+.jothi-gallery-img {
+  transform: scale(1.04);
+}
+
+.jothi-gallery-section .jothi-gallery-item:focus-visible {
+  outline: 3px solid #087fbd;
+  outline-offset: 3px;
+}
+
+@media (max-width: 575.98px) {
+  .jothi-gallery-section .jothi-gallery-item {
+    height: 160px;
+    border-radius: 9px;
   }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .jothi-gallery-section .jothi-gallery-img {
+    transition: none;
+  }
+}
 </style>
 
+<!-- PhotoSwipe initialization -->
+<script type="module">
+  import PhotoSwipeLightbox from
+    "https://cdn.jsdelivr.net/npm/photoswipe@5/dist/photoswipe-lightbox.esm.js";
 
+  const gallery = document.getElementById("jothi-gallery");
 
+  if (gallery && !gallery.dataset.photoswipeInitialized) {
+    gallery.dataset.photoswipeInitialized = "true";
 
+    const links = Array.from(
+      gallery.querySelectorAll(".jothi-gallery-item")
+    );
 
+    /*
+     * Obtain the actual image dimensions without hardcoding
+     * width and height values.
+     */
+    function getImageDimensions(src) {
+      return new Promise((resolve) => {
+        const image = new Image();
 
+        image.onload = function () {
+          resolve({
+            src: src,
+            width: image.naturalWidth,
+            height: image.naturalHeight
+          });
+        };
 
+        image.onerror = function () {
+          resolve(null);
+        };
+
+        image.src = src;
+
+        if (image.complete && image.naturalWidth > 0) {
+          resolve({
+            src: src,
+            width: image.naturalWidth,
+            height: image.naturalHeight
+          });
+        }
+      });
+    }
+
+    Promise.all(
+      links.map(function (link) {
+        return getImageDimensions(link.href);
+      })
+    ).then(function (dimensions) {
+      /*
+       * Keep only valid images and retain their original
+       * gallery order for previous/next navigation.
+       */
+      const items = dimensions.map(function (item, index) {
+        if (!item || item.width <= 0 || item.height <= 0) {
+          return null;
+        }
+
+        return {
+          src: item.src,
+          width: item.width,
+          height: item.height,
+          alt: links[index].querySelector("img")?.alt || ""
+        };
+      });
+
+      const validItems = items.filter(Boolean);
+
+      if (!validItems.length) {
+        return;
+      }
+
+      /*
+       * Use a data source so PhotoSwipe receives the actual
+       * dimensions of each image.
+       */
+      const lightbox = new PhotoSwipeLightbox({
+        dataSource: validItems,
+        pswpModule: () =>
+          import("https://cdn.jsdelivr.net/npm/photoswipe@5/dist/photoswipe.esm.js")
+      });
+
+      /*
+       * Map each clicked gallery link to its corresponding
+       * PhotoSwipe item.
+       */
+      links.forEach(function (link, index) {
+        if (!items[index]) {
+          link.removeAttribute("href");
+          link.setAttribute("aria-disabled", "true");
+          return;
+        }
+
+        link.addEventListener("click", function (event) {
+          event.preventDefault();
+          lightbox.loadAndOpen(
+            validItems.indexOf(items[index])
+          );
+        });
+      });
+
+      lightbox.init();
+    });
+  }
+</script>
 
 <!-- SERVICES -->
     <section id="services">
@@ -446,6 +610,7 @@
             </div>
         </div>
     </section>
+
   </main>
 
    <!-- FOOTER -->
@@ -562,8 +727,38 @@
         </div>
     </div>
 
-    <!-- whatsapp --><a href="https://wa.me/+919080442303" target="_blank" class="btn btn-success btn-lg shadow"
-        style="position:fixed;bottom:20px;right:20px;border-radius:50px; aria-label="Chat with us on WhatsApp""><i class="bi bi-whatsapp"></i></a>
+    <!-- whatsapp -->
+    <!-- <a href="https://wa.me/+919080442303" target="_blank" class="btn btn-success btn-lg shadow"
+            style="position:fixed;bottom:20px;right:20px;border-radius:50px; aria-label="Chat with us on WhatsApp""><i class="bi bi-whatsapp"></i></a> -->
+            
+    <a href="https://wa.me/919080442303" target="_blank" rel="noopener noreferrer" class="whatsapp-float"
+        aria-label="Chat with Jothi Heart and Skin Clinic on WhatsApp">
+        <i class="bi bi-whatsapp" aria-hidden="true"></i>
+    </a>
+    <style>
+        .whatsapp-float {
+            position: fixed;
+            right: 22px;
+            bottom: 22px;
+            z-index: 1040;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            color: #fff;
+            background: #168B64;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.16);
+            font-size: 1.25rem;
+            text-decoration: none;
+        }
+
+        .whatsapp-float:hover {
+            color: #fff;
+            background: #106F50;
+        }
+    </style>
    <!-- callnow -->
   <a href="tel:+919080442303" class="btn btn-success position-fixed bottom-0 start-0 m-3 d-md-none"><i class="bi bi-telephone-fill"></i></a>
 
