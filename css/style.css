@@ -511,7 +511,7 @@ p {
 
 /* Navigation */
 
-.navbar.fixed-top {
+/* .navbar.fixed-top {
   background: rgba(255, 255, 255, 0.97);
   border-bottom: 1px solid var(--clinic-border);
   box-shadow: 0 3px 18px rgba(18, 52, 84, 0.06);
@@ -564,7 +564,7 @@ p {
 
 .offcanvas .offcanvas-title {
   color: var(--clinic-navy) !important;
-}
+} */
 
 /* Consistent buttons */
 
